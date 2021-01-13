@@ -1,0 +1,117 @@
+.testimonials{
+    width: 100%;
+    padding: 5rem 8rem;
+    position: relative;
+    @media only screen and (max-width: 48em){
+        padding: 3rem;
+    }
+    &__hashtag{
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color--primary--red;
+        letter-spacing: 1.5px;
+        margin-top: 3rem;
+    }
+    &__heading{
+        text-align: center;
+        //margin-top: 2rem;
+        font-size: 3.8rem;
+        font-weight: 700;
+        line-height: 4.8rem;
+        font-family: $font--arbit;
+        & span{
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color: #000;
+            color: transparent;
+        }
+    }
+    &__paragraph{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    &__container{
+        margin-top: 3rem;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+
+        &--subcontainer{
+            display: flex;
+            width: max-content;
+            position: relative;
+            left: 0;
+            transition: .3s;
+        }
+        &--testimonial{
+            width: 55.5rem;
+            position: relative;
+            margin-left: 2rem;
+            @media only screen and (max-width: 48em){
+                width: 48rem;
+            }
+            @media only screen and (max-width: 28.125em){
+                position: relative;
+                width: 32rem;
+            }
+            &:last-child{
+                margin-right: 2rem;
+            }
+        }
+        &--image{
+            float: right;
+            margin-right: 2rem;
+            height: 17.5rem;
+            width: 17.5rem;
+            opacity: 1;
+            z-index: 20;
+            border-radius: 1rem;
+            overflow: hidden;
+            position: relative;
+
+            @media only screen and (max-width: 48em){
+                position: relative;
+                top: unset;
+                right: unset;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        &--testimonialbox{
+            position: relative;
+            z-index: 5;
+            padding: 5rem;
+            background-color: #f9f6f0;
+            margin-top: 7.5rem;
+            border-radius: 1rem;
+            @media only screen and (max-width: 48em){
+                margin-top: -3rem;
+                padding: 2rem;
+                padding-top: 4rem;
+            }
+        }
+        &--name{
+            font-weight: 700;
+            color: #020202;
+            font-family: $font--arbit;
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
+        }
+        &--occupation{
+            color:#797979;
+            margin-bottom: 2rem;
+        }
+        &--paragraph{
+            color: #1c1c1c;
+            font-size: 1.5rem;
+        }
+    }
+}

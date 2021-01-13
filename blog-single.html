@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="body">
+        <!--########################        HEADER          ###################################-->
+        <header class="header absolute">
+            <div class="header__left">
+                <div class="header__left--logobox">
+                    <img src="images/logo.png" alt="" class="header__left--logo">
+                </div>
+                <div class="header__left--linkbox">
+                    <a href="index.html" class="header__left--link select">Home</a>
+                    <a href="#" class="header__left--link header__left--dropdown">About</a>
+                    <a href="#" class="header__left--link header__left--dropdown">Project</a>
+                    <a href="#" class="header__left--link header__left--dropdown">latest Project</a>
+                    <a href="#" class="header__left--link">News</a>
+                    <a href="#" class="header__left--link">Blog</a>
+                    <a href="#" class="header__left--link">Volunteer</a>
+                    <a href="#" class="header__left--link">contact</a>
+                </div>
+            </div>
+            <div class="header__right">
+                <a href="#" class="header__right--button">Contribute now</a>
+            </div>
+        </header>
+
+        <!--##########################          DROPDOWNS           ###########################-->
+
+        <div class="dropdown">
+            <a href="ourstory.html" class="dropdown__link">Our Stories</a>
+            <a href="founder.html" class="dropdown__link">Founders</a>
+        </div>
+        <div class="dropdown">
+            <a href="saheli.html" class="dropdown__link">Saheli</a>
+            <a href="#" class="dropdown__link">Rahat Sewa</a>
+            <a href="#" class="dropdown__link">Josh</a>
+            <a href="#" class="dropdown__link">Shagun</a>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown__link">Sashakt Divyang</a>
+            <a href="#" class="dropdown__link">Swabhiman</a>
+        </div>
+
+<script>
+var alldropdowns = document.querySelectorAll('.dropdown');
+var alldropdownlinks = document.querySelectorAll('.header__left--dropdown');
+
+Array.from( alldropdownlinks ).forEach( (link,index) => {
+    let dropdown = false;
+    link.addEventListener( 'mouseover', (e) => {
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } );
+    link.addEventListener( 'mouseleave',function(){
+        if( dropdown == false ){
+            alldropdowns[index].classList.remove('select');
+        }
+    } )
+    alldropdowns[index].addEventListener( 'mouseover',function(){
+        dropdown = true;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } )
+    alldropdowns[index].addEventListener( 'mouseleave',function(){
+        dropdown = false;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.remove('select');
+    } )
+} )
+
+</script>
+
+        <!--#######################         BANNER          ###################################-->
+        <div class="banner">
+            <img src="images/banner.jpg" alt="" class="banner__image">
+        </div>
+        <!--#######################         BLOGPAGE        ###################################-->
+        <div class="bpage">
+            <div class="bpage__grid">
+                <div class="bpage__grid--left">
+                    <img src="images/blogimg-1.jpg" alt="" class="bpage__grid--image">
+                </div>
+                <div class="bpage__grid--right">
+                    <p class="bpage__grid--heading">Event info</p>
+                    <div class="bpage__grid--flexboxes">
+                        <div class="bpage__grid--flexiconbox">
+                            <img src="#" alt="" class="bpage__grid--flexicon">
+                        </div>
+                        <div class="bpage__grid--flexcontantbox">
+                            <p class="bpage__grid--flexheading">Start time</p>
+                            <p class="bpage__grid--flexparagraph">10AM</p>
+                        </div>
+                    </div>
+                    <div class="bpage__grid--flexboxes">
+                        <div class="bpage__grid--flexiconbox">
+                            <img src="#" alt="" class="bpage__grid--flexicon">
+                        </div>
+                        <div class="bpage__grid--flexcontantbox">
+                            <p class="bpage__grid--flexheading">Start time</p>
+                            <p class="bpage__grid--flexparagraph">10AM</p>
+                        </div>
+                    </div>
+                    <div class="bpage__grid--flexboxes">
+                        <div class="bpage__grid--flexiconbox">
+                            <img src="#" alt="" class="bpage__grid--flexicon">
+                        </div>
+                        <div class="bpage__grid--flexcontantbox">
+                            <p class="bpage__grid--flexheading">Start time</p>
+                            <p class="bpage__grid--flexparagraph">10AM</p>
+                        </div>
+                    </div>
+                    <div class="bpage__grid--flexboxes">
+                        <div class="bpage__grid--flexiconbox">
+                            <img src="#" alt="" class="bpage__grid--flexicon">
+                        </div>
+                        <div class="bpage__grid--flexcontantbox">
+                            <p class="bpage__grid--flexheading">Start time</p>
+                            <p class="bpage__grid--flexparagraph">10AM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="bpage__heading">
+                Employee giving funds - Corporate generosity
+            </h1>
+            <p class="bpage__paragraph">
+                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size16 pxOne morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs
+            </p>
+            <p class="bpage__paragraph">
+                He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size16 pxOne morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back
+            </p>
+            <div class="bpage__imagebox">
+                <img src="images/blogimg-2.jpg" alt="" class="bpage__imagebox--image">
+            </div>
+        </div>
+        <!--#######################         INSTAGRAM       ###################################-->
+        <div class="instagram">
+            <a href="#" class="instagram__post">
+                <img src="images/insta-1.jpg" alt="" class="instagram__post--image">
+                <div class="instagram__post--logo"></div>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-2.jpg" alt="" class="instagram__post--image">
+                <div class="instagram__post--logo"></div>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-3.jpg" alt="" class="instagram__post--image">
+                <div class="instagram__post--logo"></div>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-4.jpg" alt="" class="instagram__post--image">
+                <div class="instagram__post--logo"></div>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-5.jpg" alt="" class="instagram__post--image">
+                <div class="instagram__post--logo"></div>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-6.jpg" alt="" class="instagram__post--image">
+                <div class="instagram__post--logo"></div>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-7.jpg" alt="" class="instagram__post--image">
+                <div class="instagram__post--logo"></div>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-8.jpg" alt="" class="instagram__post--image">
+                <div class="instagram__post--logo"></div>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-9.jpg" alt="" class="instagram__post--image">
+                <div class="instagram__post--logo"></div>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-10.jpg" alt="" class="instagram__post--image">
+                <div class="instagram__post--logo"></div>
+            </a>
+        </div>       
+        <!--#######################         FOOTER          ###################################-->
+        <footer class="footer">
+            <div class="footer__grid">
+                <div class="footer__grid--cell">
+                    <img src="images/logo.jpg" alt="" class="footer__grid--image">
+                    <p class="footer__grid--paragraph">
+                        Strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal
+                    </p>
+                    <div class="footer__grid--socialbox">
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Address Location
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        9/277 Dakshin Puri Extn.<br> Dr. Ambedkar Nagar, <br>New Delhi 110062
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Phone: +91-9810171702
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Email: founder@ladlifoundation.com
+                    </p>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Quick Links
+                    </h4>
+                    <div class="footer__grid--links">
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Project</a>
+                        <a href="#" class="footer__grid--link">NEWS</a>
+                        <a href="#" class="footer__grid--link">Blog</a>
+                        <a href="#" class="footer__grid--link">Event</a>
+                        <a href="#" class="footer__grid--link">Contact</a>
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Saheli</a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Newsletter
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        You get notified when somthing new will appear.
+                    </p>
+                    <form action="#" class="footer__grid--newsform">
+                        <input type="text" placeholder="Your Email Here" name="footerEmail" id="footerEmail" class="footer__grid--text">
+                        <button class="footer__grid--submit">
+                            <svg class="footer__grid--submitIcon">
+                                <use href="svg/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright--paragraph">
+                    Copyright © 2020 Ladli Foundation, all rights reserved. Designed by: <a href="https://adhyay.co.in">Adhyay</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

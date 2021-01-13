@@ -1,0 +1,44 @@
+.youtube{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1000;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background-color: #333;
+    transition: .3s;
+    &.select{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 4rem;
+        width: 4rem;
+        background-color: #fff;
+        color: $color--primary--red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+    &__videobox{
+        height: 80%;
+        width: 80%;
+        position: relative;
+        & iframe{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

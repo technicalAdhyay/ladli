@@ -1,0 +1,69 @@
+.popuptestimonial{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000000;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    &.select{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__closebutton{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 5rem;
+        width: 5rem;
+        background-color: #cd211d;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        cursor: pointer;
+        z-index: 1000001;
+    }
+    &__imagebox{
+        border-radius: 1rem;
+        overflow: hidden;
+        &--image{
+
+        }
+    }
+    &__contentbox{
+        margin-top: 2rem;
+        background-color: #f9f6f0;
+        max-width: 60rem;
+        border-radius: 2rem;
+        padding: 2rem;
+        &--name{
+            font-weight: 700;
+            color: #020202;
+            font-family: $font--arbit;
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
+        }
+        &--occupation{
+            color:#797979;
+            margin-bottom: 2rem;
+        }
+        &--paragraph{
+            color: #1c1c1c;
+            font-size: 1.5rem;
+        }
+    }
+}

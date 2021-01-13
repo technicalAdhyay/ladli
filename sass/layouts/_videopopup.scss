@@ -1,0 +1,42 @@
+.videopopup{
+    position: fixed;
+    z-index: 1000000;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    visibility: hidden;
+    transition: .3s;
+    opacity: 0;
+
+    &.select{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &__close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 5rem;
+        width: 5rem;
+        background-color: $color--primary--red;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3rem;
+        cursor: pointer;
+        z-index: 1000001;
+    }
+
+    &__video{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}

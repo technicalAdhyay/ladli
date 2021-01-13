@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="body">
+        <!--########################        HEADER          ###################################-->
+        <header class="header absolute">
+            <div class="header__left">
+                <div class="header__left--logobox">
+                    <img src="images/logo.png" alt="" class="header__left--logo">
+                </div>
+                <div class="header__left--linkbox">
+                    <a href="index.html" class="header__left--link">Home</a>
+                    <a href="#" class="header__left--link header__left--dropdown">About</a>
+                    <a href="#" class="header__left--link header__left--dropdown select">Project</a>
+                    <a href="#" class="header__left--link header__left--dropdown">latest Project</a>
+                    <a href="#" class="header__left--link">News</a>
+                    <a href="#" class="header__left--link">Blog</a>
+                    <a href="#" class="header__left--link">Volunteer</a>
+                    <a href="#" class="header__left--link">contact</a>
+                </div>
+            </div>
+            <div class="header__right">
+                <a href="#" class="header__right--button">Contribute now</a>
+            </div>
+        </header>
+
+        <!--##########################          DROPDOWNS           ###########################-->
+
+        <div class="dropdown">
+            <a href="ourstory.html" class="dropdown__link">Our Story</a>
+            <a href="founder.html" class="dropdown__link">Founder</a>
+        </div>
+        <div class="dropdown">
+            <a href="saheli.html" class="dropdown__link">Saheli</a>
+            <a href="rahat-seva.html" class="dropdown__link">Rahat Seva</a>
+            <a href="josh.html" class="dropdown__link">Josh</a>
+            <a href="shagun.html" class="dropdown__link">Shagun</a>
+        </div>
+        <div class="dropdown">
+            <a href="sashakt-divyang.html" class="dropdown__link">Sashakt Divyang</a>
+            <a href="swabhiman.html" class="dropdown__link">Swabhiman</a>
+        </div>
+
+<script>
+var alldropdowns = document.querySelectorAll('.dropdown');
+var alldropdownlinks = document.querySelectorAll('.header__left--dropdown');
+
+Array.from( alldropdownlinks ).forEach( (link,index) => {
+    let dropdown = false;
+    link.addEventListener( 'mouseover', (e) => {
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } );
+    link.addEventListener( 'mouseleave',function(){
+        if( dropdown == false ){
+            alldropdowns[index].classList.remove('select');
+        }
+    } )
+    alldropdowns[index].addEventListener( 'mouseover',function(){
+        dropdown = true;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } )
+    alldropdowns[index].addEventListener( 'mouseleave',function(){
+        dropdown = false;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.remove('select');
+    } )
+} )
+
+</script>
+
+        <!--########################        PPAGE        ##################################-->
+        <div class="ppage">
+            <div class="ppage__banner">
+                <h1 class="ppage__banner--heading">Don't turn away, Give today!</h1>
+                <p class="ppage__banner--paragraph">
+                    Magazine and housed in a nice, gilded frame. It showed a lady fitted out with hat and fur boa who sat upright, raising a heavy fur muff that
+                </p>
+                <a href="#" class="ppage__banner--button">
+                    Donate Now
+                </a>
+                <img src="images/saheli-banner.jpg" alt="" class="ppage__backimage">
+            </div>
+            <div class="ppage__about">
+                <div class="ppage__about--left">
+                    <h1 class="ppage__about--heading">
+                        Ladli Foundation Trust being a helping hand to fight against pandemic through Project.
+                    </h1>
+                    <a href="#" class="ppage__about--button">Rahat Seva</a>
+                </div>
+                <div class="ppage__about--center">
+                    <img src="images/saheli.jpg" alt="" class="ppage__about--image">
+                </div>
+                <div class="ppage__about--right">
+                    <p class="ppage__about--paragraph">
+                        On 24 March 2020, the Indian government announced a three-week nationwide lockdown to contain the spread of corona virus in the country. The scope of this order is hard to comprehend: India is a country of more than a billion people; it suffers from extreme poverty in several areas and many of its cities such as Delhi, Mumbai and Kolkata are extraordinarily dense. This inevitably left hundreds of thousands of migrant workers stranded; many of them were compelled to return home by covering hundreds of kilometers on foot as the transportation services were suspended.
+                    </p>
+                    <p class="ppage__about--name">Ladli Foundation</p>
+                    <p class="ppage__about--occupation">COVID 19 Relief</p>
+                </div>
+            </div>
+            <div class="ppage__help">
+                <div class="ppage__help--left">
+
+                    <h4 class="ppage__help--heading">
+                        Key Activities 
+                    </h4>
+                    <div class="ppage__help--container">
+                        <div class="ppage__help--cardcontainer" data-top="0" data-element="0" data-hit="top">
+                            <div class="ppage__help--card">
+                                <h6 class="ppage__help--cardheading">
+                                    Saheli Health Camp 
+                                </h6>
+                                <p class="ppage__help--cardparagraph">
+                                    It is a 21 days activity along with pre-evaluation study for a targeted location that include Sensitization through reward based Interactive Workshops, Street Plays about MHM, WASH, Child Sexual Abuse, Mental Health, Malnutrition and Primary Healthcare Camp Including Medical Screening, CBC test, Distribution of Personal Hygiene Kits, prescribed Medicine and Supplements and referrals to the severely diagnosed cases that need immediate treatment. 
+                                </p>
+
+                                <div class="ppage__help--goal">
+                                    <p class="ppage__help--goalparagraph">
+                                        GOAL: <span>$500</span>
+                                    </p>
+                                    <p class="ppage__help--goalparagraph">
+                                        REACHED: <span>$300</span>
+                                    </p>
+                                </div>
+
+                                <div class="ppage__help--progresscontainer">
+                                    <p class="ppage__help--progressmeter"><span>85</span>%</p>
+                                    <div class="ppage__help--progressbar">
+                                        <div class="ppage__help--progress"></div>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" class="ppage__help--button">
+                                    Donate Now
+                                </a>
+                            </div>
+                            <div class="ppage__help--card">
+                                <h6 class="ppage__help--cardheading">
+                                    Saheli Awareness Camp 
+                                </h6>
+                                <p class="ppage__help--cardparagraph">
+                                    It is a 7 days activity for a targeted location that include Sensitization through Need based Workshops, Street Plays about MHM, WASH, Child Sexual Abuse Including Distribution of Personal Hygiene Kits & Reward based Q&amp;A Sessions for effective community engagements. 
+                                </p>
+
+                                <div class="ppage__help--goal">
+                                    <p class="ppage__help--goalparagraph">
+                                        GOAL: <span>$500</span>
+                                    </p>
+                                    <p class="ppage__help--goalparagraph">
+                                        REACHED: <span>$300</span>
+                                    </p>
+                                </div>
+
+                                <div class="ppage__help--progresscontainer">
+                                    <p class="ppage__help--progressmeter"><span>85</span>%</p>
+                                    <div class="ppage__help--progressbar">
+                                        <div class="ppage__help--progress"></div>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" class="ppage__help--button">
+                                    Donate Now
+                                </a>
+                            </div>
+                            <div class="ppage__help--card">
+                                <h6 class="ppage__help--cardheading">
+                                    Saheli Community Volunteer 
+                                </h6>
+                                <p class="ppage__help--cardparagraph">
+                                    It aims at building a solidarity network of female volunteers in each targeted slum to make them as a bridge between the beneficiary and the organisation.  It also act as an effective tool for ensuring the sustainability of the programme as they are enabled with intensive training about alarming women health issues through health experts on monthly basis and they become source of knowledge for local communities and ensuring their well-being time to time. 
+                                </p>
+
+                                <div class="ppage__help--goal">
+                                    <p class="ppage__help--goalparagraph">
+                                        GOAL: <span>$500</span>
+                                    </p>
+                                    <p class="ppage__help--goalparagraph">
+                                        REACHED: <span>$300</span>
+                                    </p>
+                                </div>
+
+                                <div class="ppage__help--progresscontainer">
+                                    <p class="ppage__help--progressmeter"><span>85</span>%</p>
+                                    <div class="ppage__help--progressbar">
+                                        <div class="ppage__help--progress"></div>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" class="ppage__help--button">
+                                    Donate Now
+                                </a>
+                            </div>
+                            <div class="ppage__help--card">
+                                <h6 class="ppage__help--cardheading">
+                                    Help for helpless human!
+                                </h6>
+                                <p class="ppage__help--cardparagraph">
+                                    Throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants
+                                </p>
+
+                                <div class="ppage__help--goal">
+                                    <p class="ppage__help--goalparagraph">
+                                        GOAL: <span>$500</span>
+                                    </p>
+                                    <p class="ppage__help--goalparagraph">
+                                        REACHED: <span>$300</span>
+                                    </p>
+                                </div>
+
+                                <div class="ppage__help--progresscontainer">
+                                    <p class="ppage__help--progressmeter"><span>85</span>%</p>
+                                    <div class="ppage__help--progressbar">
+                                        <div class="ppage__help--progress"></div>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" class="ppage__help--button">
+                                    Donate Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ppage__help--scrollbuttons">
+                        <div class="ppage__help--scroll top">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-chevron-up"></use>
+                            </svg>
+                        </div>
+                        <div class="ppage__help--scroll bottom">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-chevron-down"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+<script>
+var allpscroolbuttons = document.querySelectorAll('.ppage__help--scroll');
+function moveupward(parentcontainer,cardcontainer,allcards,ctop,celement){
+    let card = allcards[celement];
+    let cardheight = card.getBoundingClientRect().height + 20;
+    let containerheight = cardcontainer.getBoundingClientRect().height;
+    let parentheight = parentcontainer.getBoundingClientRect().height;
+    
+    if( -1*ctop + cardheight + parentheight >= containerheight ){
+        //SET TO TOP
+        cardcontainer.style.top = -containerheight  + parentheight + 'px'; 
+        cardcontainer.setAttribute('data-hit','bottom');
+    }else{
+        cardcontainer.style.top = ctop - cardheight + 'px';
+        cardcontainer.setAttribute('data-top',ctop-cardheight);
+        cardcontainer.setAttribute('data-element',++celement);
+    }    
+}
+
+function movedownward(parentcontainer,cardcontainer,allcards,ctop,celement){
+    if(celement-1 < 0)
+    return;
+    
+    let card = allcards[celement-1];
+    let cardheight = card.getBoundingClientRect().height + 20;
+    let containerheight = cardcontainer.getBoundingClientRect().height;
+    let parentheight = parentcontainer.getBoundingClientRect().height;
+    
+    if( -1*ctop - cardheight <= 0 ){
+        cardcontainer.style.top = '0px';
+        cardcontainer.setAttribute('data-top',0);
+        cardcontainer.setAttribute('data-element',0);
+        cardcontainer.setAttribute('data-hit','top');
+    }else{
+        cardcontainer.style.top = ctop + cardheight + 'px';
+        cardcontainer.setAttribute('data-top',ctop + cardheight);
+        cardcontainer.setAttribute('data-element',celement-1);
+    }
+    
+}
+
+var pscrolltimeout;
+
+var pscroolanimate = function(parentcontainer){
+    let cardcontainer = parentcontainer.children[0];
+    let allcards = cardcontainer.children;
+    let currenttop = parseInt(cardcontainer.getAttribute('data-top'));
+    let currentelement = parseInt(cardcontainer.getAttribute('data-element'));
+    
+    pscrolltimeout = setTimeout(()=>{
+        console.log('hello');
+        
+        if( cardcontainer.getAttribute('data-hit') == 'bottom' ){
+            movedownward(parentcontainer,cardcontainer,allcards,currenttop,currentelement);
+        }else{
+            moveupward(parentcontainer,cardcontainer,allcards,currenttop,currentelement);
+        }
+        pscroolanimate(parentcontainer);
+    },16000)
+}
+
+Array.from( document.querySelectorAll('.ppage__help--container') ).forEach( (parentcontainer,index) => {    
+    pscroolanimate(parentcontainer);
+} );
+
+Array.from( allpscroolbuttons ).forEach( (button,index) => {
+    button.addEventListener( 'click',function(){
+        clearTimeout(pscrolltimeout);
+        let parentcontainer = button.parentElement.parentElement.querySelector('.ppage__help--container');
+        let cardcontainer = parentcontainer.children[0];
+        let allcards = cardcontainer.children;
+        let currenttop = parseInt(cardcontainer.getAttribute('data-top'));
+        let currentelement = parseInt(cardcontainer.getAttribute('data-element'));
+
+        if( button.classList.contains('top') ){
+            //MOVE UPWARD
+            moveupward(parentcontainer,cardcontainer,allcards,currenttop,currentelement);
+        }else{
+            //MOVE DOWNWARD
+            movedownward(parentcontainer,cardcontainer,allcards,currenttop,currentelement);
+        }
+
+        pscroolanimate(parentcontainer);
+
+    } );
+} );
+
+</script>
+                <div class="ppage__help--right">
+                   <img src="images/s1.jpg" alt="" class="ppage__help--rightimage"> 
+                </div>
+            </div>
+        </div>
+        
+            <!--######################          CONTENT         ##################################-->
+
+        <div class="content">
+            <div class="content__grid right">
+                <div class="content__grid--right">
+                    <img src="images/s11.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--left">
+                    <h6 class="content__grid--heading">
+                        Cause/Concept Introduction:
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        Throughout the world, COVID-19 pandemic is a crisis like no other the world has faced in recent decades in terms of its potential and social impact.<br><br>On 24 March 2020, the 	Indian government announced a three-week nationwide lockdown to contain the spread of corona virus in the country. The scope of this order is hard to comprehend: India is a country of more than a billion people; it suffers from extreme poverty in several areas and many of its cities such as Delhi, Mumbai and Kolkata are extraordinarily dense. This inevitably left hundreds of thousands of migrant workers stranded; many of them were compelled to return home by covering hundreds of kilometers on foot as the transportation services were suspended.<br><br>During the pandemic lockdown, key problems arose in terms of hunger, poverty and hygiene. Although, India actually may have enough food to feed its entire population, just from the public stock, it’s not clear how the food will get to those places in such a short period of time. Hence, despite having good intentions that focus on welfare of the common people, the execution of it can be challenging in a country like India, because of the numerous logistical obstacles and hurdles.<br><br>When it comes to personal health &amp; hygiene - women are facing the brunt of the lockdown when compared to men. During the initial phase of the lockdown, sanitary napkins were not included in the list of essential items. This left many women and girls with no choice but to resort to the age-old, unhygienic practice of using old clothes to manage their periods due to limited access to sanitary pads and broken supply-chain for menstrual hygiene products, particularly the underprivileged class.
+
+
+
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="content__grid left">
+                <div class="content__grid--left">
+                    <img src="images/s12.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--right">
+                    <h6 class="content__grid--heading">
+                        Sathi Hath Badhana with India News, ITV network 
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        <strong>Ladli Foundation Trust being a helping hand to fight against pandemic through Project – RAHAT SEVA</strong><br><br>
+                        To conquer the hard times of pandemic lockdown, a nationwide campaign was conducted in association with India News – SATHI HATH BADHANA. We worked towards the distribution of essential rations and dry food, masks, hand sanitizers, stationary to children, and sanitary kits, to provide relief from the fear of pandemic with the support of Delhi Police, ONGC, Jindal Stainless Limited Group, Pertronet LNG and Ritu Kumar in various slums of Delhi. <br>Ladli was able to achieve some enormous benchmarks to provide relief against nationwide pandemic:                    
+
+                    </p>
+                    <ul class="abpage__list">
+                    <li class="abpage__list--item">Over 1 lakh migrant labourers were directly benefitted during the difficult and trying times with the support of Delhi Police</li>
+                    <li class="abpage__list--item">Distributed 1-month dry ration kits to 20000 families.</li>
+                    <li class="abpage__list--item">Effective ground presence of police staff helped in maintaining social distancing.</li>
+                    <li class="abpage__list--item">Distributed 1.5 lakh cotton mask</li>
+                    <li class="abpage__list--item">1.5 lakh sanitary pads to underprivileged females and other menstruators.</li>
+                    <li class="abpage__list--item">Distributed Lactogen Baby Milk Powder for 6000 new born babies in underprivileged areas like Ambedkar Nagar, Fatehpur beri, Madhu vihar, Gwala Dairy, Durgavihar (Dwarka), Rangpuri Pahadi (Vasant Kunj) etc.</li>
+                    <li class="abpage__list--item">Supplied Saheli Sanitary kits to underprivileged girls and women in the slum areas of Kalkaji where the numbers of beneficiaries for nearly 300+ people.</li>
+                </ul><br>While our volunteers were working on field to provide help to all those in need during the times of the COVID-19 pandemic, we discovered that out of all the classes and cross-sections of the society, it was the mothers of new born babies in slums who have suffered perhaps the most during the period of pandemic lockdown.<br><br>We found that they did not even have enough money to be able to afford a cup of tea. They were destitute, they had nothing. There were people akin to our organization who distributed ration and essential items to them. Sometimes they got food, sometimes they didn’t. But the matter of most concern was about the newly born babies – they were unable to eat anything and milk packet supplies were disrupted. Women living in slums are often weak and anemic, they are often unable to lactate in that condition and therefore can’t breastfeed their babies. What about their health and their child’s life?  
+                </div>
+            </div>
+            
+            <div class="content__grid right">
+                <div class="content__grid--right">
+                    <img src="images/s11.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--left">
+                    <h6 class="content__grid--heading">
+                       The Road ahead:
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        While government schemes ensured that the poor would get additional rations due to the lockdown, the distribution system failed to be effective as the ration cards are area-specific and fair price shops were largely inaccessible. Various Non-Governmental Organization such as Ladli foundation have taken a step forward and spearheaded the initiative to provide these migrant workers and other vulnerable sectors with basic amenities, transportation provisions and other benefits. Now, with the things turning back to normal, at a slow pace, our attempt is to re-establish these workers with better life skills, to adjust to the ‘new normal’.
+
+
+
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!--#######################         TEAM                ###############################-->
+
+        <div class="team">
+            <div class="team__col des">
+                <p class="team__col--hashtag">
+                    #team Saheli
+                </p>
+                <h4 class="team__col--heading">
+                    Our Volunteer
+                </h4>
+                <p class="team__col--paragraph">
+                    We are going out there and making a change!
+                </p>
+                <a href="#" class="team__col--link">
+                    Become A Volunteer
+                </a>
+            </div>
+            <div class="team__col">
+                <img src="images/sah1.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah2.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah3.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                     <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah4.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah5.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+               <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah6.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                  <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah7.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Rahul Rana
+                    </p>
+                    <p class="team__col--occupation">
+                        Front End Developer
+                    </p>
+                    <div class="team__col--icons">
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah8.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Rahul Rana
+                    </p>
+                    <p class="team__col--occupation">
+                        Front End Developer
+                    </p>
+                    <div class="team__col--icons">
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah9.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Rahul Rana
+                    </p>
+                    <p class="team__col--occupation">
+                        Front End Developer
+                    </p>
+                    <div class="team__col--icons">
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah10.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Rahul Rana
+                    </p>
+                    <p class="team__col--occupation">
+                        Front End Developer
+                    </p>
+                    <div class="team__col--icons">
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <!--#######################         NTESTIMONIALS        ###############################-->
+        <div class="ntestimonials">
+            <div class="ntestimonials__left">
+                <p class="ntestimonials__left--hashtag">
+                    #TESTIMONIALS
+                </p>
+                <h4 class="ntestimonials__left--heading">
+                    Client feedbacks
+                </h4>
+                <div class="ntestimonials__left--testimonialscontainer" data-left="0" data-element="0">
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Sh. Amitabh Bachchan
+                            </p>
+                            <p class="ntestimonials__left--occupation">
+                                Bollywood Megastar
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                                "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Sh. Amitabh Bachchan
+                            </p>
+                            <p class="ntestimonials__left--occupation">
+                                Bollywood Megastar
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                                "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Sh. Amitabh Bachchan
+                            </p>
+                            <p class="ntestimonials__left--occupation">
+                                Bollywood Megastar
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                                "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Sh. Amitabh Bachchan
+                            </p>
+                            <p class="ntestimonials__left--occupation">
+                                Bollywood Megastar
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                                "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ntestimonials__left--buttons">
+                    <div class="ntestimonials__left--button left">
+                        <svg>
+                            <use href="svg/sprite.svg#icon-chevron-left"></use>
+                        </svg>
+                    </div>
+                    <div class="ntestimonials__left--button right">
+                        <svg>
+                            <use href="svg/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </div>
+                </div>
+<script>
+var ntestimonialsbuttons = document.querySelectorAll('.ntestimonials__left--button');
+Array.from(ntestimonialsbuttons).forEach( (button,index) => {
+
+    function movetowardsright( container ){
+        //debugger;
+        let cleft = parseInt(container.getAttribute('data-left'));
+        let celement = parseInt(container.getAttribute('data-element'));
+
+        if( celement -1 < -1 )
+            return;
+
+        let elementwidth = container.children[celement].getBoundingClientRect().width;
+
+        if( cleft + elementwidth >=0 ){
+            container.style.left = '0px';
+            container.setAttribute('data-left','0');
+            container.setAttribute('data-element','0');
+        }else{
+            container.style.left = cleft + elementwidth+'px';
+            container.setAttribute('data-left',cleft + elementwidth);
+            container.setAttribute('data-element',celement-1);
+        }
+    }
+
+    function movetowardsleft( container ){
+        //debugger;
+        let cleft = parseInt(container.getAttribute('data-left'));
+        let celement = parseInt(container.getAttribute('data-element'));
+
+        let elementwidth = container.children[celement].getBoundingClientRect().width;
+
+        if(-1*cleft + elementwidth + container.parentElement.getBoundingClientRect().width >= container.getBoundingClientRect().width ){
+            container.style.left = -container.getBoundingClientRect().width + container.parentElement.getBoundingClientRect().width+'px';
+            console.log(-container.getBoundingClientRect().width + container.parentElement.getBoundingClientRect().width);
+            container.setAttribute('data-left',-container.getBoundingClientRect().width + container.parentElement.getBoundingClientRect().width);
+        }else{
+            container.style.left = cleft - elementwidth + 'px';
+            container.setAttribute('data-left',cleft - elementwidth);
+            console.log(cleft - elementwidth);
+            container.setAttribute('data-element',celement+1);
+        }
+
+    }
+
+    button.addEventListener( 'click',function(){
+        if( button.classList.contains('left') ){
+            movetowardsleft( button.parentElement.parentElement.querySelector('.ntestimonials__left--testimonialscontainer') );
+        }else{
+            movetowardsright( button.parentElement.parentElement.querySelector('.ntestimonials__left--testimonialscontainer') );
+        }
+    } );
+} );
+</script>
+            </div>
+            <div class="ntestimonials__right">
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                        +
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        VOLUNTEER
+                    </p>
+                </div>
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        VOLUNTEER
+                    </p>
+                </div>
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        VOLUNTEER
+                    </p>
+                </div>
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        VOLUNTEER
+                    </p>
+                </div>
+            </div>
+        </div>
+<script>
+
+var page = {
+    y : undefined
+}
+
+window.addEventListener('scroll',function(e){
+    page.y = window.pageYOffset;
+});
+
+var allntestimonialnumbers = document.querySelectorAll('.ntestimonials__right--number');
+Array.from(allntestimonialnumbers).forEach( (number,index) => {
+    let children = number.children;
+    console.log(children);
+    let childheight = children[0].getBoundingClientRect().height;
+    if( number.classList.contains('top') ){
+        number.style.bottom = (children.length-1)*childheight - 20+'px';
+    }else{
+        number.style.top = -1*(children.length-3)*childheight + 17+'px';
+    }
+
+    function numberscroll(e){
+        //console.log(number.getBoundingClientRect().top);
+        if( number.parentElement.getBoundingClientRect().top < window.innerHeight/1.5  ){
+            if( number.classList.contains('top') ){
+                number.style.bottom = '0px';
+            }else{
+                number.style.top = '0px';
+            }
+            window.removeEventListener('scroll', numberscroll);
+        }
+    }
+
+    window.addEventListener( 'scroll', numberscroll );
+
+} );
+</script>
+
+        <!--#######################         INSTAGRAM       ###################################-->
+        <div class="instagram">
+            <a href="#" class="instagram__post">
+                <img src="images/insta-1.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-2.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-3.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-4.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-5.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-6.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-7.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-8.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-9.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-10.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+        </div>       
+        <!--#######################         FOOTER          ###################################-->
+        <footer class="footer">
+            <div class="footer__grid">
+                <div class="footer__grid--cell">
+                    <img src="images/logo.jpg" alt="" class="footer__grid--image">
+                    <p class="footer__grid--paragraph">
+                        Strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal
+                    </p>
+                    <div class="footer__grid--socialbox">
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Address Location
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        9/277 Dakshin Puri Extn.<br> Dr. Ambedkar Nagar, <br>New Delhi 110062
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Phone: +91-9810171702
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Email: founder@ladlifoundation.com
+                    </p>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Quick Links
+                    </h4>
+                    <div class="footer__grid--links">
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Project</a>
+                        <a href="#" class="footer__grid--link">NEWS</a>
+                        <a href="#" class="footer__grid--link">Blog</a>
+                        <a href="#" class="footer__grid--link">Event</a>
+                        <a href="#" class="footer__grid--link">Contact</a>
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Saheli</a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Newsletter
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        You get notified when somthing new will appear.
+                    </p>
+                    <form action="#" class="footer__grid--newsform">
+                        <input type="text" placeholder="Your Email Here" name="footerEmail" id="footerEmail" class="footer__grid--text">
+                        <button class="footer__grid--submit">
+                            <svg class="footer__grid--submitIcon">
+                                <use href="svg/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright--paragraph">
+                    Copyright © 2020 Ladli Foundation, all rights reserved. Designed by: <a href="https://adhyay.co.in">Adhyay</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

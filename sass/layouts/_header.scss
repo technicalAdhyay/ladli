@@ -1,0 +1,140 @@
+.header{
+    height: 11.3rem;
+    width: 100%;
+    
+    position: relative;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+
+    @media only screen and (max-width: 48em){
+        height: 8rem;
+    }
+
+    &.absolute{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background-color: transparent;
+        @media only screen and (max-width: 28.125em){
+            position: relative;
+            background-color: #fff;
+        }
+    }
+    
+    
+
+    &__left{
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+        width: calc(100% - 16rem);
+        @media only screen and (max-width: 48em){
+            margin-left: 3rem;
+        }
+        &--logobox{
+            width: 23rem;
+            @media only screen and (max-width: 48em){
+                width: 20rem;
+            }
+        }
+        &--logo{
+            width: 100%;
+        }
+        &--intro{
+            margin-left: 1rem;
+            margin-right: 2rem; 
+            color:#e53e80; 
+            text-align:center;
+            font-size: 1.2rem;
+            @media only screen and (max-width: 48em){
+                display: none;
+            }
+        }
+        &--linkbox{
+            display: flex;
+            margin-left: auto;
+            @media only screen and( max-width: 64em ){
+                display: none;
+            }
+
+        }
+        &--scoialbox{
+            display: flex;
+            align-items: center;
+            margin-left: 2rem;
+            @media only screen and (max-width: 48em){
+                display: none;
+            }
+        }
+        &--iconlink{
+            height: 4rem;
+            width: 4rem;
+            &:not(:last-child){
+                margin-right: 1rem;
+            }
+        }
+        &--icon{
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+        &--link{
+            margin-left: 2rem;
+            text-transform: uppercase;
+            transition: .3s;
+            padding: .5rem 1.5rem;
+            border-radius: 2rem;
+            border: 2px solid transparent;
+            color: #000;
+            background-color: transparent;
+            &:hover{
+                color: $color--primary--red;
+            }
+            &.select{
+                border-color: $color--primary--red;
+                color: $color--primary--red;
+            }
+        }
+    
+        &--link2{
+            margin-left: 2rem;
+            text-transform: uppercase;
+            transition: .3s;
+            padding: .5rem 1.5rem;
+            border-radius: 2rem;
+            border: 2px solid transparent;
+            color: #56d1f9;
+            background-color: transparent;
+            &:hover{
+                color: $color--primary--red;
+            }
+            &.select{
+                border-color: $color--primary--red;
+                color: $color--primary--red;
+            }
+        }
+    }
+    &__right{
+        height: 100%;
+        width: 16rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &--button{
+            padding: .75rem 1.5rem;
+            border: 2px solid #da3b78;
+            color: #e53e80;
+            border-radius: 5px;
+            text-transform: capitalize;
+            transition: .3s;
+            &:hover{
+                color: $color--primary--red;
+                border-color: $color--primary--red;
+            }
+        }
+    }
+}

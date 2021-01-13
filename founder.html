@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladli Foundation Trust</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="body">
+        <!--########################        HEADER          ###################################-->
+        <header class="header absolute">
+            <div class="header__left">
+                <div class="header__left--logobox">
+                    <img src="images/logo.png" alt="" class="header__left--logo">
+                </div>
+                <div class="header__left--linkbox">
+                    <a href="index.html" class="header__left--link">Home</a>
+                    <a href="#" class="header__left--link header__left--dropdown  select">About</a>
+                    <a href="#" class="header__left--link header__left--dropdown">Project</a>
+                    <a href="#" class="header__left--link header__left--dropdown">latest Project</a>
+                    <a href="#" class="header__left--link">News</a>
+                    <a href="#" class="header__left--link">Blog</a>
+                    <a href="#" class="header__left--link">Volunteer</a>
+                    <a href="#" class="header__left--link">contact</a>
+                </div>
+            </div>
+            <div class="header__right">
+                <a href="#" class="header__right--button">Contribute now</a>
+            </div>
+        </header>
+
+        <!--##########################          DROPDOWNS           ###########################-->
+
+        <div class="dropdown">
+             <a href="ourstory.html" class="dropdown__link">Our Story</a>
+            <a href="founder.html" class="dropdown__link">Founder</a>
+        </div>
+        <div class="dropdown">
+            <a href="saheli.html" class="dropdown__link">Saheli</a>
+            <a href="rahat-seva.html" class="dropdown__link">Rahat Seva</a>
+            <a href="josh.html" class="dropdown__link">Josh</a>
+            <a href="shagun.html" class="dropdown__link">Shagun</a>
+        </div>
+        <div class="dropdown">
+            <a href="sashakt-divyang.html" class="dropdown__link">Sashakt Divyang</a>
+            <a href="swabhiman.html" class="dropdown__link">Swabhiman</a>
+        </div>
+
+<script>
+var alldropdowns = document.querySelectorAll('.dropdown');
+var alldropdownlinks = document.querySelectorAll('.header__left--dropdown');
+
+Array.from( alldropdownlinks ).forEach( (link,index) => {
+    let dropdown = false;
+    link.addEventListener( 'mouseover', (e) => {
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } );
+    link.addEventListener( 'mouseleave',function(){
+        if( dropdown == false ){
+            alldropdowns[index].classList.remove('select');
+        }
+    } )
+    alldropdowns[index].addEventListener( 'mouseover',function(){
+        dropdown = true;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } )
+    alldropdowns[index].addEventListener( 'mouseleave',function(){
+        dropdown = false;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.remove('select');
+    } )
+} )
+
+</script>
+
+        <!--#######################         BANNER          ###################################-->
+        <div class="banner">
+            <img src="images/banner.jpg" alt="" class="banner__image">
+        </div>
+
+        <!--######################          PPAGE ABOUT     ###################################-->
+        <div class="ppage__about">
+            <div class="ppage__about--left">
+                <h1 class="ppage__about--heading">
+                    Initiatives to empower &amp; rehabilitate thousands of unprivileged girls
+                </h1>
+                <a href="ourstory.html" class="ppage__about--button">More about us</a>
+            </div>
+            <div class="ppage__about--center">
+                <img src="images/founder.jpg" alt="" class="ppage__about--image">
+            </div>
+            <div class="ppage__about--right">
+                <p class="ppage__about--paragraph">
+                    <strong>Devendra, A Slum born National Award Winner by Govt of India</strong>, a grass-root level social reformer &amp; rehabilitator to a multitude of <strong>unprivileged slum girls</strong>. Commended as True Hero by the legendary superstar Mr. Amitabh Bachchan for his extraordinary commitments to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. He is the Founder of Renowned Ladli Foundation Trust, empowering and changing lives of lakhs of females in slums at large.
+                </p>
+                <p class="ppage__about--name">Devendra Kumar Gupta</p>
+                <p class="ppage__about--occupation">Founder of Ladli Foundation</p>
+            </div>
+        </div>
+
+        <!--######################          CONTENT         ##################################-->
+
+        <div class="content">
+            <div class="content__grid right">
+                <div class="content__grid--right">
+                    <img src="images/f1.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--left">
+                    <h6 class="content__grid--heading">
+                        Highlights
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        Born in Slums of South Delhi, Devendra embarked his journey where he was left alone to face a world full of hardships. His parents left him and his 3-days old infant sister with their paternal aunt, who since then looked after both the siblings. <strong>At the age of 13</strong>, Devendra devoted his life &amp; started a journey for the welfare of unprivileged with St. John Ambulance wing of Indian Red Cross as Cadet Volunteer.<br><br><strong>A National Award Winner</strong>, grass-root level social worker, rehabilitator to a multitude of unprivileged slum girls, Devendra is a<strong><i> “True Hero”</i></strong> as commended by the legend Mr. Amitabh Bachchan for his extraordinary commitments to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse.<br><br>Devendra is also officially nominated for prestigious Padma Shri Award-2019. (4th Highest Civilian Award of India) by Ministry of Social Justice, Government of India, for his extraordinary &amp; revolutionary changes in the society.<br><br> <strong>”Run for Laadli Half Marathon“</strong> organised in association with <strong>Delhi Police</strong> is an outcome of efforts of Devendra Kumar Gupta towards the cause: <strong>gender equality &amp; women safety. Inaugurated in presence of more than 20 thousand people, the project was widely praised by the Guest of Honor Rajnath Singh, Home Minister 2017</strong>. The success of the event rejoiced across the nation with wide media coverage.
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="content__grid left">
+                <div class="content__grid--left">
+                    <img src="images/f2.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--right">
+                    <h6 class="content__grid--heading">
+                        Other noteworthy initiatives
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        <strong>Over 2 lac male population</strong> motivated about gender equality and stop crimes against women through unique street plays and exclusive gender sensitization program. <strong>More than 65000 mothers &amp; daughters</strong> in slums have been provided free medical health checkup including blood test and individual counselling about mensuration hygiene, sexual abuse &amp; STD’s through Saheli initiative.<br><br> <strong>Rehabilitated more than 1750 unprivileged girls</strong> by facilitating their complete marriage expenses through his innovative mass wedding concept. Provided free computer &amp; English training to <strong>more than 13 thousand women out of which mostly females employed for respectable jobs</strong>. De -addicted thousands of juveniles and young boys from substance abuse through his distinctive Initiative named <strong>“JOSH” (Enthusiasm) stands for Juveniles Orientation Through Sports &amp; Health</strong>. Which also includes counselling to divert them from clutches of criminal rackets &amp; orients them to become an asset for the society.<br><br> Successfully saved thousands of Girls from leaving their studies, by relocating the existing schools in deserted areas. His efforts made the concerned authority to reverse its decision of relocation of the school and the same has been appreciated by NATIONAL MEDIA.<br><br><i>“Changing the mindset of the society about women is the Real Women Empowerment"</i> - Devendra Kumar Gupta
+                    </p>
+                </div>
+            </div>
+            <div class="content__grid right">
+                <div class="content__grid--right">
+                    <img src="images/f3.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--left">
+                    <h6 class="content__grid--heading">
+                        About
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        <strong>Devendra, A Slum born National Award Winner by Govt of India</strong>, a grass-root level social reformer &amp; rehabilitator to a multitude of unprivileged slum girls. Commended as True Hero by the legendary superstar <strong>Mr. Amitabh Bachchan</strong> for his extraordinary commitments to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. He is the Founder of Renowned <strong>Ladli Foundation Trust</strong>, empowering and changing lives of lakhs of females in slums at large.<br><br> He vision of an egalitarian society has succeeded in percolating to the lowest strata of the society, saving thousands of women from social and sexual exploitation. For the past 20 years, he is working to enhance the quality of life of unprivileged youth in slums across India. <strong>He is known for pioneering innovative projects benefitting millions of unprivileged Indians and transforming their lives.</strong><br><br> Devendra envisages a gender-neutral country by endeavouring to bring a change in the mindsets of the people. He aims to establish the LARGEST-EVER WORKFORCE of volunteers called LAADLI RAKSHAKS (Savior of Women) for promotion of the cause of gender equality and women safety. His creative projects are awarded the official association of the True Hero, for its effective ground activities, outreach and conceptualizations such as #RunForLaadli, <strong>#LaadliRakshak, #Saheli,</strong> and many more. Devendra has been a harbinger of progressive movements in society, which has treated its daughters like a burden for a very long time. He is extensively working with a large number of illiterate, unprivileged, schedule caste and handicapped women, forced or trapped in the illegal trades. <br><br><i>“Life is a book, people in life are chapters, every chapter will teach you something.”</i> <strong>- Devendra Kumar Gupta</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--#######################         ABPAGE          ###################################-->
+        <div class="abpage">
+            <h1 class="abpage__title">
+                More About the Founder
+            </h1>
+            <h4 class="abpage__heading">
+                Early Life
+            </h4>
+            <p class="abpage__pargraph">
+                Born in Dakshin Puri Slum of South Delhi, Devendra Kumar Gupta embarked on his journey at the age of two when, his parents left him and his 3-days old infant sister with their paternal aunt. At a very young age, Devendra started to earn his living to look after his family consisting of his younger sister and elderly grandmother. At 9, when other kids of his age used to play with balloons, he used to sell, thinking about his family’s next uncertain meal. By 10, he was working as Chhotu (Child labour) at a chemist shop, as an aid, for a meagre amount of Rs.250/- per month, while continuing his schooling in a Government School.<br><br>Devendra’s first NGO “JOSH- EK UMANG” was a result of his concern for his fellow youth, who had their entire life to live, but were trapped in the vicious circle of drug addiction. Along with a group of likeminded people, he crusaded against drug addiction by seeking the help of Police, dissuading pharmacists from selling drugs without prescription. His diligence bore fruits, and he was able to rehabilitate more than 1500 youngsters through his creatively designed idea of involving drug and alcohol addicted unemployed males into “Kabaddi Sports” &amp; their volunteering at religious places.<br><br>He also exposed the malpractices of gas dealers, for instance, booking of refill domestic gas cylinders before 21 days, and illegal and forceful selling of gas stoves to consumers taking new connection, that benefitted millions of Indians across the country. His combat with dowry-demanding family, for his sister's marriage in the year 2010, switched his social journey to the welfare of uneducated girls, who couldn’t afford schooling, due to poverty and orthodox mentality of the society that doesn’t believe in female education. Thereafter, he started his grassroots research to evaluate the status-quo, of destitute unmarried girls, that has ultimately led him to establish the LADLI FOUNDATION TRUST.
+            </p>
+            <h4 class="abpage__heading">
+                Awards
+            </h4>
+            <div class="abpage__grid">
+                <div class="abpage__grid--imagebox">
+                    <img src="images/award1.jpg" alt="" class="abpage__grid--image">
+                </div>
+                <div class="abpage__grid--imagebox">
+                    <img src="images/award2.jpg" alt="" class="abpage__grid--image">
+                </div>
+                <ul class="abpage__list">
+                    <li class="abpage__list--item">National Youth Award 2013- by the Ministry of Youth affairs &amp; Sports, Govt. of India.</li>
+                    <li class="abpage__list--item">Honorary Doctorate for his outstanding social work by IVPU, Bangalore.</li>
+                    <li class="abpage__list--item">First Manbassador Award-2018, by Pinkledder.co , Bangalore.</li>
+                    <li class="abpage__list--item">Awarded By Commissioner of Police Delhi , for Mass Gender Sensitization.</li>
+                    <li class="abpage__list--item">National Gaurav Award 2016- by Indian Braveheart’s at Vigyan Bhavan, New Delhi.</li>
+                    <li class="abpage__list--item">National Women Achiever Award by Lifeline Foundation, at FICCI Auditorium, New Delhi.</li>
+                    <li class="abpage__list--item">The Jurist Award by justice Gyan Sudha Mishra, (Judge, Supreme Court of India) at IIC.</li>
+                    <li class="abpage__list--item">Commendation Award for life saving with risk to self from St. John Ambulance, Delhi.</li>
+                    <li class="abpage__list--item">Dr. M.R. Pal Medal – by St. John ambulance, Delhi (Wing of Red Cross Society)</li>
+                </ul>
+            </div>
+            <h4 class="abpage__heading">
+                Recognition
+            </h4>
+            <p class="abpage__pargraph">
+               He led Indo-China Youth delegation 2014, by Government of India with 200 Delegates from India. At the age of 19, he was praised by the National Media for exposing the malpractices of gas dealers India which benefitted millions of Indians. He was commended by the Indian judiciary &amp; national media for his heart-warming act of kindness by getting his accident case settled in unique manner which involved the accused in donating 400 blankets to the poor on streets in chilly weather. He Initiated International conferences like INDIA &amp; BRICS (2016), and INDO-TIBET SUMMIT (2017) at New Delhi in the esteemed Presence of Hon,ble Prime Minister of Tibet Govt. in Exile and Secretary Ministry of External Affairs Govt. of India. As Founder President of South &amp; East Asia Foundation. He was appointed as the youngest Commissioned officer - A Cadet Superintendent in St. John Ambulance brigade Delhi, (a wing of Indian Red Cross Society)
+            </p>
+            <h4 class="abpage__heading">
+                Expertise
+            </h4>
+            <ul class="abpage__list">
+                <li class="abpage__list--item">More than 10 years of experience in organizing national scale events where each event had the strength of more than 150000-25000 Participants.</li>
+                <li class="abpage__list--item">Conducting successful education and training of more than 10,000 girls annually.</li>
+                <li class="abpage__list--item">Organizing Summits &amp; Conferences for discussion on International Agendas annually like Bricks, Indo-Tibet Summit, G-20 etc.</li>
+                <li class="abpage__list--item">Providing vocational training to thousands of unprivileged women and men.</li>
+                <li class="abpage__list--item">Conducting and executing mass marriages by providing domestic utility worth Rs. 1 lac to each bride and organizing the event successfully.</li>
+            </ul>
+            <p class="abpage__pargraph"><i>Being professional limits you to fly, being social gives you wings to fly.”</i> - Devendra Kumar Gupta. <br>Devendra has also addressed various occasions as a Keynote and Motivational speaker with his expertise in explaining the plight of women in slums and how they are left behind from government policies. Gupta</p>
+            <p class="abpage__pargraph">Expertise on:</p>
+            <ul class="abpage__list">
+                <li class="abpage__list--item">Youth Motivation Speaker</li>
+                <li class="abpage__list--item">Inspirational Speaker</li>
+                <li class="abpage__list--item">Attitude</li>
+                <li class="abpage__list--item">Leadership</li>
+                <li class="abpage__list--item">Social issues</li>
+            </ul>
+            <p class="abpage__pargraph">His popular topics</p>
+            <ul class="abpage__list">
+                <li class="abpage__list--item">The unveiling life of Chhotu (Child labour) to a National Award Winner. (His journey with source of perseverance, strength and determination)</li>
+                <li class="abpage__list--item">Social Entrepreneurship- an emerging trend.</li>
+                <li class="abpage__list--item">AHow inner development of youth leads to a reformative society.</li>
+                <li class="abpage__list--item">Why to connect privileged with unprivileged &amp; Domestic Social Responsibility.</li>
+                <li class="abpage__list--item">Importance of mass wedding for unprivileged girls in India.</li>
+                <li class="abpage__list--item">Plight of Slum females in India &amp; its effect on their health.</li>
+                <li class="abpage__list--item">Current situation of socially victimized unprivileged girls in slums who were born in 90's.</li>
+                <li class="abpage__list--item">How uneducated females have become harmful portent of deadly chronicle diseases.</li>
+                <li class="abpage__list--item">A step ahead of Padman.</li>
+            </ul><br>
+        </div>
+        
+        <!--#######################         CAUSES          ###################################-->
+        <div class="causes">
+            <h1 class="causes__heading">FOUNDER'S ACHEIVMENTS</h1>
+            <div class="causes__container">
+                <div class="causes__containerbox">
+                    <div class="cause">
+                        <img src="images/img-1.jpg" alt="" class="cause__image">
+                        <div class="cause__buttonbox" data-video="videos/video1.mp4">
+                            <div class="cause__buttonbox--button"></div>
+                        </div>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-2.jpg" alt="" class="cause__image">
+                        <div class="cause__buttonbox" data-video="videos/video2.mp4">
+                            <div class="cause__buttonbox--button"></div>
+                        </div>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-3.jpg" alt="" class="cause__image">
+                        <div class="cause__buttonbox" data-video="videos/video3.mp4">
+                            <div class="cause__buttonbox--button"></div>
+                        </div>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-4.jpg" alt="" class="cause__image">
+                        <div class="cause__buttonbox" data-video="videos/video4.mp4">
+                            <div class="cause__buttonbox--button"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--######################          VIDEOPOPUP      ##################################-->
+        <div class="videopopup">
+            <div class="videopopup__close">X</div>
+            <video controls class="videopopup__video">
+                <source src="#">
+            </video>
+        </div>
+        <!--#######################         FOOTER          ###################################-->
+        <footer class="footer">
+            <div class="footer__grid">
+                <div class="footer__grid--cell">
+                    <img src="images/logo.jpg" alt="" class="footer__grid--image">
+                    <p class="footer__grid--paragraph">
+                        Strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal
+                    </p>
+                    <div class="footer__grid--socialbox">
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Address Location
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        9/277 Dakshin Puri Extn.<br> Dr. Ambedkar Nagar, <br>New Delhi 110062
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Phone: +91-9810171702
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Email: founder@ladlifoundation.com
+                    </p>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Quick Links
+                    </h4>
+                    <div class="footer__grid--links">
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Project</a>
+                        <a href="#" class="footer__grid--link">NEWS</a>
+                        <a href="#" class="footer__grid--link">Blog</a>
+                        <a href="#" class="footer__grid--link">Event</a>
+                        <a href="#" class="footer__grid--link">Contact</a>
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Saheli</a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Newsletter
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        You get notified when somthing new will appear.
+                    </p>
+                    <form action="#" class="footer__grid--newsform">
+                        <input type="text" placeholder="Your Email Here" name="footerEmail" id="footerEmail" class="footer__grid--text">
+                        <button class="footer__grid--submit">
+                            <svg class="footer__grid--submitIcon">
+                                <use href="svg/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright--paragraph">
+                    Copyright © 2020 Ladli Foundation, all rights reserved. Designed by: <a href="https://adhyay.co.in">Adhyay</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/slideshow.js"></script>
+<script src="js/events.js"></script>
+<script src="js/causes.js"></script>
+<script src="js/testimonials.js"></script>
+    <script src="js/videoFounder.js"></script>
+<script src="js/causes.js"></script>
+</html>

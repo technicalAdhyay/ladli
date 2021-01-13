@@ -1,0 +1,173 @@
+.slogan{
+    height: 80rem;
+    width: 100%;
+    padding: 0 12rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    z-index: 10;
+    overflow: hidden;
+    background-image: linear-gradient(90deg, rgba(0,188,212,.84), rgba(41,33,71,.84) ),  url(../images/6.jpg);
+    background-size: contain;
+
+    @media only screen and (max-width: 48em){
+        padding: 3rem;
+        background-position: 69% center;
+    }
+
+    &__background{
+        position: absolute;
+        top: 0;
+        left: 25%;
+        height: 100%;
+        z-index: 5;
+        width: 50vw;
+        transition: 1s;
+        opacity: 0;
+    }
+    &.select &__background{
+        left: 50%;
+        opacity: 1;
+    }
+
+    &__container{
+        position: absolute;
+        z-index: 10;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: 1s;
+        opacity: 0;
+    }
+    &.select &__container{
+        left: 2%;
+        transform: translateY(-50%);
+        opacity: 1;
+    }
+
+    &__heading{
+        font-size: 1.6rem;
+        color: #fff;
+        max-width: 74rem;
+        width: 100%;
+        position: relative;
+        @media only screen and (max-width: 48em){
+            font-size: 1.6rem;
+        }
+        @media only screen and (max-width: 28.125em){
+            font-size: 1.6rem;
+        }
+    }
+    
+    &__paragraph{
+        font-size: 1.6rem;
+        color: #fff;
+        max-width: 74rem;
+        font-family: "Heebo", sans-serif;
+        width: 100%;
+        position: relative;
+        @media only screen and (max-width: 48em){
+            font-size: 3.2rem;
+        }
+        @media only screen and (max-width: 28.125em){
+            font-size: 2.8rem;
+        }
+    }
+    
+    &__link{
+        margin-top: 3.6rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #fff;
+        transition: .3s;
+        padding: 1.2rem 3rem;
+        border: 2px solid $color--primary--red;
+        width: max-content;
+        border-radius: .5rem;
+        position: relative;
+        &:hover{
+            color: #fff;
+            background-color: $color--primary--red;
+        }
+    }
+    
+    &__button{
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        height: 8rem;
+        width: 8rem;
+        border-radius: 10rem;
+        background-color: $color--primary--red;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+
+        @media only screen and (max-width: 48em){
+            top: unset;
+            bottom: 2rem;
+            right: 2rem;
+        }
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            animation: circleTransform 2s infinite;
+            background-color: $color--primary--red;
+            z-index: 5;
+            opacity: .5;
+            border-radius: 10rem;
+        }
+
+        &--triangle{
+            height: 4rem;
+            width: 4rem;
+            background-color: #fff;
+            clip-path: polygon(20% 0, 20% 100%, 100% 50%);
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    &__subcontainer{
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        padding: 2rem 3rem;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 100;
+        max-width: 60rem;
+        &--paragraph{
+            color: #fff;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        &--name{
+            margin-top: 1rem;
+            text-align: center;
+            color: yellow;
+            font-size: 1.6rem;
+        }
+    }
+
+}
+
+@keyframes circleTransform{
+    0%{
+        transform: scale(1);
+        
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladli Foundation Trust</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="body">
+        <!--########################        HEADER          ###################################-->
+        <header class="header absolute">
+            <div class="header__left">
+                <div class="header__left--logobox">
+                    <img src="images/logo.png" alt="" class="header__left--logo">
+                </div>
+                <div class="header__left--linkbox">
+                    <a href="index.html" class="header__left--link select">Home</a>
+                    <a href="#" class="header__left--link header__left--dropdown">About</a>
+                    <a href="#" class="header__left--link header__left--dropdown">Project</a>
+                    <a href="#" class="header__left--link header__left--dropdown">latest Project</a>
+                    <a href="#" class="header__left--link">News</a>
+                    <a href="#" class="header__left--link">Blog</a>
+                    <a href="#" class="header__left--link">Volunteer</a>
+                    <a href="#" class="header__left--link">contact</a>
+                </div>
+            </div>
+            <div class="header__right">
+                <a href="#" class="header__right--button">Contribute now</a>
+            </div>
+        </header>
+
+        <!--##########################          DROPDOWNS           ###########################-->
+
+        <div class="dropdown">
+            <a href="ourstory.html" class="dropdown__link">Our Story</a>
+            <a href="founder.html" class="dropdown__link">Founder</a>
+        </div>
+        <div class="dropdown">
+            <a href="saheli.html" class="dropdown__link">Saheli</a>
+            <a href="#" class="dropdown__link">Rahat Seva</a>
+            <a href="#" class="dropdown__link">Josh</a>
+            <a href="#" class="dropdown__link">Shagun</a>
+        </div>
+        <div class="dropdown">
+            <a href="#" class="dropdown__link">Sashakt Divyang</a>
+            <a href="#" class="dropdown__link">Swabhiman</a>
+        </div>
+
+<script>
+var alldropdowns = document.querySelectorAll('.dropdown');
+var alldropdownlinks = document.querySelectorAll('.header__left--dropdown');
+
+Array.from( alldropdownlinks ).forEach( (link,index) => {
+    let dropdown = false;
+    link.addEventListener( 'mouseover', (e) => {
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } );
+    link.addEventListener( 'mouseleave',function(){
+        if( dropdown == false ){
+            alldropdowns[index].classList.remove('select');
+        }
+    } )
+    alldropdowns[index].addEventListener( 'mouseover',function(){
+        dropdown = true;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } )
+    alldropdowns[index].addEventListener( 'mouseleave',function(){
+        dropdown = false;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.remove('select');
+    } )
+} )
+
+</script>
+
+        <!--########################        PPAGE        ##################################-->
+        <div class="ppage">
+            <div class="ppage__banner">
+                <h1 class="ppage__banner--heading">Don't turn away, Give today!</h1>
+                <p class="ppage__banner--paragraph">
+                    Magazine and housed in a nice, gilded frame. It showed a lady fitted out with hat and fur boa who sat upright, raising a heavy fur muff that
+                </p>
+                <a href="#" class="ppage__banner--button">
+                    Donate Now
+                </a>
+                <img src="images/saheli-banner.jpg" alt="" class="ppage__backimage">
+            </div>
+            <div class="ppage__about">
+                <div class="ppage__about--left">
+                    <h1 class="ppage__about--heading">
+                        ‘Saheli’ meaning ‘friend’ is referred to the mother of the girl.
+                    </h1>
+                    <a href="#" class="ppage__about--button">Rahat Seva</a>
+                </div>
+                <div class="ppage__about--center">
+                    <img src="images/saheli.jpg" alt="" class="ppage__about--image">
+                </div>
+                <div class="ppage__about--right">
+                    <p class="ppage__about--paragraph">
+                        In a country where marital and familial rape an oxymoron, it is perhaps, not surprising if a girl is not safe in her own house. In this scenario, the only source of help can come from their mother. Saheli is not only an initiative but also a constant effort to give voice to the unspoken and ignored matters of our society. We wish to reach every hidden and dark corner of our society and give women a ray of hope. 
+                    </p>
+                    <p class="ppage__about--name">Ladli Foundation</p>
+                    <p class="ppage__about--occupation">Beti Bachao Initiative</p>
+                </div>
+            </div>
+            <div class="ppage__help">
+                <div class="ppage__help--left">
+
+                    <h4 class="ppage__help--heading">
+                        Key Activities 
+                    </h4>
+                    <div class="ppage__help--container">
+                        <div class="ppage__help--cardcontainer" data-top="0" data-element="0" data-hit="top">
+                            <div class="ppage__help--card">
+                                <h6 class="ppage__help--cardheading">
+                                    Saheli Health Camp 
+                                </h6>
+                                <p class="ppage__help--cardparagraph">
+                                    It is a 21 days activity along with pre-evaluation study for a targeted location that include Sensitization through reward based Interactive Workshops, Street Plays about MHM, WASH, Child Sexual Abuse, Mental Health, Malnutrition and Primary Healthcare Camp Including Medical Screening, CBC test, Distribution of Personal Hygiene Kits, prescribed Medicine and Supplements and referrals to the severely diagnosed cases that need immediate treatment. 
+                                </p>
+
+                                <div class="ppage__help--goal">
+                                    <p class="ppage__help--goalparagraph">
+                                        GOAL: <span>$500</span>
+                                    </p>
+                                    <p class="ppage__help--goalparagraph">
+                                        REACHED: <span>$300</span>
+                                    </p>
+                                </div>
+
+                                <div class="ppage__help--progresscontainer">
+                                    <p class="ppage__help--progressmeter"><span>85</span>%</p>
+                                    <div class="ppage__help--progressbar">
+                                        <div class="ppage__help--progress"></div>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" class="ppage__help--button">
+                                    Donate Now
+                                </a>
+                            </div>
+                            <div class="ppage__help--card">
+                                <h6 class="ppage__help--cardheading">
+                                    Saheli Awareness Camp 
+                                </h6>
+                                <p class="ppage__help--cardparagraph">
+                                    It is a 7 days activity for a targeted location that include Sensitization through Need based Workshops, Street Plays about MHM, WASH, Child Sexual Abuse Including Distribution of Personal Hygiene Kits & Reward based Q&amp;A Sessions for effective community engagements. 
+                                </p>
+
+                                <div class="ppage__help--goal">
+                                    <p class="ppage__help--goalparagraph">
+                                        GOAL: <span>$500</span>
+                                    </p>
+                                    <p class="ppage__help--goalparagraph">
+                                        REACHED: <span>$300</span>
+                                    </p>
+                                </div>
+
+                                <div class="ppage__help--progresscontainer">
+                                    <p class="ppage__help--progressmeter"><span>85</span>%</p>
+                                    <div class="ppage__help--progressbar">
+                                        <div class="ppage__help--progress"></div>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" class="ppage__help--button">
+                                    Donate Now
+                                </a>
+                            </div>
+                            <div class="ppage__help--card">
+                                <h6 class="ppage__help--cardheading">
+                                    Saheli Community Volunteer 
+                                </h6>
+                                <p class="ppage__help--cardparagraph">
+                                    It aims at building a solidarity network of female volunteers in each targeted slum to make them as a bridge between the beneficiary and the organisation.  It also act as an effective tool for ensuring the sustainability of the programme as they are enabled with intensive training about alarming women health issues through health experts on monthly basis and they become source of knowledge for local communities and ensuring their well-being time to time. 
+                                </p>
+
+                                <div class="ppage__help--goal">
+                                    <p class="ppage__help--goalparagraph">
+                                        GOAL: <span>$500</span>
+                                    </p>
+                                    <p class="ppage__help--goalparagraph">
+                                        REACHED: <span>$300</span>
+                                    </p>
+                                </div>
+
+                                <div class="ppage__help--progresscontainer">
+                                    <p class="ppage__help--progressmeter"><span>85</span>%</p>
+                                    <div class="ppage__help--progressbar">
+                                        <div class="ppage__help--progress"></div>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" class="ppage__help--button">
+                                    Donate Now
+                                </a>
+                            </div>
+                            <div class="ppage__help--card">
+                                <h6 class="ppage__help--cardheading">
+                                    Help for helpless human!
+                                </h6>
+                                <p class="ppage__help--cardparagraph">
+                                    Throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants
+                                </p>
+
+                                <div class="ppage__help--goal">
+                                    <p class="ppage__help--goalparagraph">
+                                        GOAL: <span>$500</span>
+                                    </p>
+                                    <p class="ppage__help--goalparagraph">
+                                        REACHED: <span>$300</span>
+                                    </p>
+                                </div>
+
+                                <div class="ppage__help--progresscontainer">
+                                    <p class="ppage__help--progressmeter"><span>85</span>%</p>
+                                    <div class="ppage__help--progressbar">
+                                        <div class="ppage__help--progress"></div>
+                                    </div>
+                                </div>
+
+
+                                <a href="#" class="ppage__help--button">
+                                    Donate Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ppage__help--scrollbuttons">
+                        <div class="ppage__help--scroll top">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-chevron-up"></use>
+                            </svg>
+                        </div>
+                        <div class="ppage__help--scroll bottom">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-chevron-down"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+<script>
+var allpscroolbuttons = document.querySelectorAll('.ppage__help--scroll');
+function moveupward(parentcontainer,cardcontainer,allcards,ctop,celement){
+    let card = allcards[celement];
+    let cardheight = card.getBoundingClientRect().height + 20;
+    let containerheight = cardcontainer.getBoundingClientRect().height;
+    let parentheight = parentcontainer.getBoundingClientRect().height;
+    
+    if( -1*ctop + cardheight + parentheight >= containerheight ){
+        //SET TO TOP
+        cardcontainer.style.top = -containerheight  + parentheight + 'px'; 
+        cardcontainer.setAttribute('data-hit','bottom');
+    }else{
+        cardcontainer.style.top = ctop - cardheight + 'px';
+        cardcontainer.setAttribute('data-top',ctop-cardheight);
+        cardcontainer.setAttribute('data-element',++celement);
+    }    
+}
+
+function movedownward(parentcontainer,cardcontainer,allcards,ctop,celement){
+    if(celement-1 < 0)
+    return;
+    
+    let card = allcards[celement-1];
+    let cardheight = card.getBoundingClientRect().height + 20;
+    let containerheight = cardcontainer.getBoundingClientRect().height;
+    let parentheight = parentcontainer.getBoundingClientRect().height;
+    
+    if( -1*ctop - cardheight <= 0 ){
+        cardcontainer.style.top = '0px';
+        cardcontainer.setAttribute('data-top',0);
+        cardcontainer.setAttribute('data-element',0);
+        cardcontainer.setAttribute('data-hit','top');
+    }else{
+        cardcontainer.style.top = ctop + cardheight + 'px';
+        cardcontainer.setAttribute('data-top',ctop + cardheight);
+        cardcontainer.setAttribute('data-element',celement-1);
+    }
+    
+}
+
+var pscrolltimeout;
+
+var pscroolanimate = function(parentcontainer){
+    let cardcontainer = parentcontainer.children[0];
+    let allcards = cardcontainer.children;
+    let currenttop = parseInt(cardcontainer.getAttribute('data-top'));
+    let currentelement = parseInt(cardcontainer.getAttribute('data-element'));
+    
+    pscrolltimeout = setTimeout(()=>{
+        console.log('hello');
+        
+        if( cardcontainer.getAttribute('data-hit') == 'bottom' ){
+            movedownward(parentcontainer,cardcontainer,allcards,currenttop,currentelement);
+        }else{
+            moveupward(parentcontainer,cardcontainer,allcards,currenttop,currentelement);
+        }
+        pscroolanimate(parentcontainer);
+    },16000)
+}
+
+Array.from( document.querySelectorAll('.ppage__help--container') ).forEach( (parentcontainer,index) => {    
+    pscroolanimate(parentcontainer);
+} );
+
+Array.from( allpscroolbuttons ).forEach( (button,index) => {
+    button.addEventListener( 'click',function(){
+        clearTimeout(pscrolltimeout);
+        let parentcontainer = button.parentElement.parentElement.querySelector('.ppage__help--container');
+        let cardcontainer = parentcontainer.children[0];
+        let allcards = cardcontainer.children;
+        let currenttop = parseInt(cardcontainer.getAttribute('data-top'));
+        let currentelement = parseInt(cardcontainer.getAttribute('data-element'));
+
+        if( button.classList.contains('top') ){
+            //MOVE UPWARD
+            moveupward(parentcontainer,cardcontainer,allcards,currenttop,currentelement);
+        }else{
+            //MOVE DOWNWARD
+            movedownward(parentcontainer,cardcontainer,allcards,currenttop,currentelement);
+        }
+
+        pscroolanimate(parentcontainer);
+
+    } );
+} );
+
+</script>
+                <div class="ppage__help--right">
+                   <img src="images/s1.jpg" alt="" class="ppage__help--rightimage"> 
+                </div>
+            </div>
+        </div>
+        
+            <!--######################          CONTENT         ##################################-->
+
+        <div class="content">
+            <div class="content__grid right">
+                <div class="content__grid--right">
+                    <img src="images/s11.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--left">
+                    <h6 class="content__grid--heading">
+                        Cause Introduction 
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        A large number of vulnerable populations is residing in urban &amp; rural slums of India are sustaining below the poverty line index and are uneducated, unaware and deprived of basic amenities. These families are often form the lowest rung of the society and particularly in this stratum of social and financial order women are the poorest of the poor with minimal right of choice and no right of expression. <br><br> Women from this stratum are still struggling to acknowledge their fundamental rights and have no access to adequate resources for voicing their opinions even for their healthcare and basic rights. We believe that sexual and reproductive health often falls between the cracks wherein women are not in a strong position to make or influence personal decisions.<br><br>Saheli is an Action-Research initiative that is especially designed for a holistic development of underprivileged women and girls in which we have successfully organized numbers of mega health camps , counselling  sessions and intensive community outreach activities for sensitizing the female population about the most concerning issues related to MHM, WASH, Sexual Abuse and prevention of life threatening communicable diseases, HIV, COVID-19 &amp; STD’s through medical screening and involving mothers and daughters together to make them understand the importance of their bonding to discuss the most sensitives issues to eliminate them at initial stage. <br><br> The project is designed in a way to start a conversation among people living in slums where inhuman traditional practices, myths, taboos and poor health conditions which are the main hurdles in providing them basic amenities and equal rights and opportunities for women. <br><br>It aims to alter all about break the taboos and adopt the safe and sustainable healthcare and reproductive rights for women. So that they drop the shame attached to these issues and talk about them without any hesitation and to create attention to the growing gender inequality and discusses how it is cultural and not biological 
+
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="content__grid left">
+                <div class="content__grid--left">
+                    <img src="images/s12.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--right">
+                    <h6 class="content__grid--heading">
+                        Beneficiaries 
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        We reach out to the female members of the community who presently belong to menstruating age groups, as well as those who are in their pre-menarche stage. The project will also reach out to young boys and girls in schools to educate them on wash rights which is very much important for good menstruation practices and to break the taboo which is attached to it. We’ve chosen this target group for there are prevalent examples of the feminization of poverty in backward regions of India making a large chunk of underprivileged women financially and socially crippled. It is very much imperative that the identified target group will help in drawing out strategies to initiate discourse, and educate and trigger behaviour change.<br><br>A majority of these girls are sexually victimized and are forced into involuntary prostitution for the sake of their survival. Oblivious to their sexual and reproductive rights, as well as the importance of feminine hygiene, women in the underprivileged sector are susceptible to numerous health issues like anaemia, unwanted pregnancy, UTI, cancer, and HIV. These women end up becoming carriers of life-threatening Sexually Transmitted Diseases like HIV AIDS, Hepatitis, Chancroid, etc. which further spread in the community due to multiple sexual partners. Moreover, we aim to include men in these conversations to encourage their acknowledgment and participation in these issues which will help these women to talk about their issues and address them.<br><br><strong>Till now we have directly benefitted 2.75 Lakhs females by providing primary healthcare and sensitized over 6 lakh females across India.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--#######################         TEAM                ###############################-->
+
+        <div class="team">
+            <div class="team__col des">
+                <p class="team__col--hashtag">
+                    #team Saheli
+                </p>
+                <h4 class="team__col--heading">
+                    Our Volunteer
+                </h4>
+                <p class="team__col--paragraph">
+                    We are going out there and making a change!
+                </p>
+                <a href="#" class="team__col--link">
+                    Become A Volunteer
+                </a>
+            </div>
+            <div class="team__col">
+                <img src="images/sah1.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah2.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah3.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                     <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah4.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah5.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+               <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah6.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                  <p class="team__col--name">
+                        Saheli Initiative
+                    </p>
+                    <p class="team__col--occupation">
+                       Ladli Foundation
+                    </p>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah7.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Rahul Rana
+                    </p>
+                    <p class="team__col--occupation">
+                        Front End Developer
+                    </p>
+                    <div class="team__col--icons">
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah8.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Rahul Rana
+                    </p>
+                    <p class="team__col--occupation">
+                        Front End Developer
+                    </p>
+                    <div class="team__col--icons">
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah9.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Rahul Rana
+                    </p>
+                    <p class="team__col--occupation">
+                        Front End Developer
+                    </p>
+                    <div class="team__col--icons">
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team__col">
+                <img src="images/sah10.jpg" alt="" class="team__col--image">
+                <div class="team__col--content">
+                    <p class="team__col--name">
+                        Rahul Rana
+                    </p>
+                    <p class="team__col--occupation">
+                        Front End Developer
+                    </p>
+                    <div class="team__col--icons">
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="team__col--icon">
+                            <svg>
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <!--#######################         NTESTIMONIALS        ###############################-->
+        <div class="ntestimonials">
+            <div class="ntestimonials__left">
+                <p class="ntestimonials__left--hashtag">
+                    #TESTIMONIALS
+                </p>
+                <h4 class="ntestimonials__left--heading">
+                    Client feedbacks
+                </h4>
+                <div class="ntestimonials__left--testimonialscontainer" data-left="0" data-element="0">
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Sh. Amitabh Bachchan
+                            </p>
+                            <p class="ntestimonials__left--occupation">
+                                Bollywood Megastar
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                                "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Sh. Amitabh Bachchan
+                            </p>
+                            <p class="ntestimonials__left--occupation">
+                                Bollywood Megastar
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                                "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Sh. Amitabh Bachchan
+                            </p>
+                            <p class="ntestimonials__left--occupation">
+                                Bollywood Megastar
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                                "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Sh. Amitabh Bachchan
+                            </p>
+                            <p class="ntestimonials__left--occupation">
+                                Bollywood Megastar
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                                "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ntestimonials__left--buttons">
+                    <div class="ntestimonials__left--button left">
+                        <svg>
+                            <use href="svg/sprite.svg#icon-chevron-left"></use>
+                        </svg>
+                    </div>
+                    <div class="ntestimonials__left--button right">
+                        <svg>
+                            <use href="svg/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </div>
+                </div>
+<script>
+var ntestimonialsbuttons = document.querySelectorAll('.ntestimonials__left--button');
+Array.from(ntestimonialsbuttons).forEach( (button,index) => {
+
+    function movetowardsright( container ){
+        //debugger;
+        let cleft = parseInt(container.getAttribute('data-left'));
+        let celement = parseInt(container.getAttribute('data-element'));
+
+        if( celement -1 < -1 )
+            return;
+
+        let elementwidth = container.children[celement].getBoundingClientRect().width;
+
+        if( cleft + elementwidth >=0 ){
+            container.style.left = '0px';
+            container.setAttribute('data-left','0');
+            container.setAttribute('data-element','0');
+        }else{
+            container.style.left = cleft + elementwidth+'px';
+            container.setAttribute('data-left',cleft + elementwidth);
+            container.setAttribute('data-element',celement-1);
+        }
+    }
+
+    function movetowardsleft( container ){
+        //debugger;
+        let cleft = parseInt(container.getAttribute('data-left'));
+        let celement = parseInt(container.getAttribute('data-element'));
+
+        let elementwidth = container.children[celement].getBoundingClientRect().width;
+
+        if(-1*cleft + elementwidth + container.parentElement.getBoundingClientRect().width >= container.getBoundingClientRect().width ){
+            container.style.left = -container.getBoundingClientRect().width + container.parentElement.getBoundingClientRect().width+'px';
+            console.log(-container.getBoundingClientRect().width + container.parentElement.getBoundingClientRect().width);
+            container.setAttribute('data-left',-container.getBoundingClientRect().width + container.parentElement.getBoundingClientRect().width);
+        }else{
+            container.style.left = cleft - elementwidth + 'px';
+            container.setAttribute('data-left',cleft - elementwidth);
+            console.log(cleft - elementwidth);
+            container.setAttribute('data-element',celement+1);
+        }
+
+    }
+
+    button.addEventListener( 'click',function(){
+        if( button.classList.contains('left') ){
+            movetowardsleft( button.parentElement.parentElement.querySelector('.ntestimonials__left--testimonialscontainer') );
+        }else{
+            movetowardsright( button.parentElement.parentElement.querySelector('.ntestimonials__left--testimonialscontainer') );
+        }
+    } );
+} );
+</script>
+            </div>
+            <div class="ntestimonials__right">
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                        +
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        VOLUNTEER
+                    </p>
+                </div>
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        VOLUNTEER
+                    </p>
+                </div>
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        VOLUNTEER
+                    </p>
+                </div>
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        VOLUNTEER
+                    </p>
+                </div>
+            </div>
+        </div>
+<script>
+
+var page = {
+    y : undefined
+}
+
+window.addEventListener('scroll',function(e){
+    page.y = window.pageYOffset;
+});
+
+var allntestimonialnumbers = document.querySelectorAll('.ntestimonials__right--number');
+Array.from(allntestimonialnumbers).forEach( (number,index) => {
+    let children = number.children;
+    console.log(children);
+    let childheight = children[0].getBoundingClientRect().height;
+    if( number.classList.contains('top') ){
+        number.style.bottom = (children.length-1)*childheight - 20+'px';
+    }else{
+        number.style.top = -1*(children.length-3)*childheight + 17+'px';
+    }
+
+    function numberscroll(e){
+        //console.log(number.getBoundingClientRect().top);
+        if( number.parentElement.getBoundingClientRect().top < window.innerHeight/1.5  ){
+            if( number.classList.contains('top') ){
+                number.style.bottom = '0px';
+            }else{
+                number.style.top = '0px';
+            }
+            window.removeEventListener('scroll', numberscroll);
+        }
+    }
+
+    window.addEventListener( 'scroll', numberscroll );
+
+} );
+</script>
+
+        <!--#######################         INSTAGRAM       ###################################-->
+        <div class="instagram">
+            <a href="#" class="instagram__post">
+                <img src="images/insta-1.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-2.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-3.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-4.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-5.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-6.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-7.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-8.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-9.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="instagram__post">
+                <img src="images/insta-10.jpg" alt="" class="instagram__post--image">
+                <svg class="instagram__post--logo">
+                    <use href="svg/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+        </div>       
+        <!--#######################         FOOTER          ###################################-->
+        <footer class="footer">
+            <div class="footer__grid">
+                <div class="footer__grid--cell">
+                    <img src="images/logo.jpg" alt="" class="footer__grid--image">
+                    <p class="footer__grid--paragraph">
+                        Strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal
+                    </p>
+                    <div class="footer__grid--socialbox">
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Address Location
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        9/277 Dakshin Puri Extn.<br> Dr. Ambedkar Nagar, <br>New Delhi 110062
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Phone: +91-9810171702
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Email: founder@ladlifoundation.com
+                    </p>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Quick Links
+                    </h4>
+                    <div class="footer__grid--links">
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Project</a>
+                        <a href="#" class="footer__grid--link">NEWS</a>
+                        <a href="#" class="footer__grid--link">Blog</a>
+                        <a href="#" class="footer__grid--link">Event</a>
+                        <a href="#" class="footer__grid--link">Contact</a>
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Saheli</a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Newsletter
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        You get notified when somthing new will appear.
+                    </p>
+                    <form action="#" class="footer__grid--newsform">
+                        <input type="text" placeholder="Your Email Here" name="footerEmail" id="footerEmail" class="footer__grid--text">
+                        <button class="footer__grid--submit">
+                            <svg class="footer__grid--submitIcon">
+                                <use href="svg/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright--paragraph">
+                    Copyright © 2020 Ladli Foundation, all rights reserved. Designed by: <a href="https://adhyay.co.in">Adhyay</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+//--------------------------        COLOR       -------------------------------
+$color--primary--red: #cd211d;
+
+
+//----------------------------      FONT        -------------------------------
+@font-face{
+    font-family: ArbitTilting;
+    src: url('../font/AbrilTitling.otf');
+}
+$font--heebo: 'Heebo', sans-serif;
+$font--arbit : ArbitTilting;

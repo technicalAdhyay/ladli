@@ -1,0 +1,38 @@
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/button';
+@import 'components/slogan';
+
+@import 'layouts/grid';
+@import 'layouts/header';
+@import 'layouts/slideshow';
+@import 'layouts/target';
+@import 'layouts/causes';
+@import 'layouts/hungry';
+@import 'layouts/events';
+@import 'layouts/badges';
+@import 'layouts/togther';
+@import 'layouts/charity';
+@import 'layouts/instagram';
+@import 'layouts/testimonials';
+@import 'layouts/footer';
+@import 'layouts/team';
+@import 'layouts/dropdown';
+@import 'layouts/newslider';
+@import 'layouts/popuptestimonial';
+@import 'layouts/ourstory';
+@import 'layouts/videopopup';
+@import 'layouts/content';
+@import 'layouts/banner';
+
+@import 'pages/home';
+@import 'pages/abpage';
+@import 'pages/bpage';
+@import 'pages/ppage';

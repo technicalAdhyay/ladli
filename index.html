@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladli Foundation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="body">
+        <!--########################        HEADER          ###################################-->
+        <header class="header">
+            <div class="header__left">
+                <div class="header__left--logobox">
+                    <img src="images/logo.png" alt="" class="header__left--logo">
+                </div>
+                <p class="header__left--intro"><strong>In Special Consultative Status with Economic &amp;<br> Social Council, (ECOSOC) Since -2020</strong><br>
+                    <strong>Officially associated with Delhi Police</strong></p>
+                <div class="header__left--linkbox">
+                    <a href="index.html" class="header__left--link select">Home</a>
+                    <a href="#" class="header__left--link header__left--dropdown">About</a>
+                    <a href="#" class="header__left--link header__left--dropdown">Project</a>
+                    <a href="#" class="header__left--link header__left--dropdown">latest Project</a>
+                    <!-- <a href="#" class="header__left--link">News</a>
+                    <a href="#" class="header__left--link">Blog</a>
+                    <a href="#" class="header__left--link">Volunteer</a>
+                    <a href="#" class="header__left--link">contact</a> -->
+                </div>
+                <div class="header__left--scoialbox">
+                    <a href="#" class="header__left--iconlink">
+                        <img src="images/fb.jpg" alt="" class="header__left--icon">
+                    </a>
+                    <a href="#" class="header__left--iconlink">
+                        <img src="images/insta.jpg" alt="" class="header__left--icon">
+                    </a>
+                    <a href="#" class="header__left--iconlink">
+                        <img src="images/twitter.jpg" alt="" class="header__left--icon">
+                    </a>
+                    <a href="#" class="header__left--iconlink">
+                        <img src="images/youtube.jpg" alt="" class="header__left--icon">
+                    </a>
+                </div>
+            </div>
+            <div class="header__right">
+                <a href="#" class="header__right--button">Contribute now</a>
+            </div>
+        </header>
+
+        <!--##########################          DROPDOWNS           ###########################-->
+
+        <div class="dropdown">
+             <a href="ourstory.html" class="dropdown__link">Our Story</a>
+            <a href="founder.html" class="dropdown__link">Founder</a>
+        </div>
+        <div class="dropdown">
+            <a href="saheli.html" class="dropdown__link">Saheli</a>
+            <a href="rahat-seva.html" class="dropdown__link">Rahat Seva</a>
+            <a href="josh.html" class="dropdown__link">Josh</a>
+            <a href="shagun.html" class="dropdown__link">Shagun</a>
+        </div>
+        <div class="dropdown">
+            <a href="sashakt-divyang.html" class="dropdown__link">Sashakt Divyang</a>
+            <a href="swabhiman.html" class="dropdown__link">Swabhiman</a>
+        </div>
+
+<script>
+var alldropdowns = document.querySelectorAll('.dropdown');
+var alldropdownlinks = document.querySelectorAll('.header__left--dropdown');
+
+Array.from( alldropdownlinks ).forEach( (link,index) => {
+    let dropdown = false;
+    link.addEventListener( 'mouseover', (e) => {
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } );
+    link.addEventListener( 'mouseleave',function(){
+        if( dropdown == false ){
+            alldropdowns[index].classList.remove('select');
+        }
+    } )
+    alldropdowns[index].addEventListener( 'mouseover',function(){
+        dropdown = true;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } )
+    alldropdowns[index].addEventListener( 'mouseleave',function(){
+        dropdown = false;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.remove('select');
+    } )
+} )
+
+</script>
+
+        <!--#######################         SLIDESHOW       ###################################-->
+        <div class="newslider">
+            <div class="newslider__container">
+                <div class="newslider__images">
+                    <img src="images/slide-2.jpg" alt="" class="newslider__images--image select">
+                    <img src="images/slide-1.jpg" alt="" class="newslider__images--image left">
+                    <img src="images/b2.jpg" alt="" class="newslider__images--image right">
+                    <img src="images/slide-3.jpg" alt="" class="newslider__images--image">
+                    <img src="images/b1.jpg" alt="" class="newslider__images--image">
+                    <img src="images/b3.jpg" alt="" class="newslider__images--image">
+                    <img src="images/b1.jpg" alt="" class="newslider__images--image">
+                </div>
+                <div class="newslider__content">
+                    <div class="newslider__content--contentbox select">
+                        <h1 class="newslider__content--heading">These Smiles are more than everything</h1>
+                        <!-- <a href="founder.html" class="newslider__content--button">Devendra  - Founder Ladli  Foundation</a> -->
+                    </div>
+                    <div class="newslider__content--contentbox">
+                        <h1 class="newslider__content--heading">Society is like a canvas, its you who need to Paint it Beautifully.</h1>
+                        <a href="founder.html" class="newslider__content--button">Devendra Kumar Gupta</a>
+                    </div>
+                    <div class="newslider__content--contentbox">
+                        <h1 class="newslider__content--heading">“ Beneficiary may not come to you for help.It’s you who need to visit them”</h1>
+                        <a href="founder.html" class="newslider__content--button">Devendra Kumar Gupta</a>
+                    </div>
+                    <div class="newslider__content--contentbox">
+                        <h1 class="newslider__content--heading">“When you educate a woman you educate a Nation”</h1>
+                        <!-- <a href="founder.html" class="newslider__content--button">Devendra  - Founder Ladli  Foundation4</a> -->
+                    </div>
+                    <div class="newslider__content--contentbox">
+                        <h1 class="newslider__content--heading">“Hunger can destroy all the Rules”</h1>
+                        <a href="founder.html" class="newslider__content--button">Devendra Kumar Gupta</a>
+                    </div>
+                    <div class="newslider__content--contentbox">
+                        <h1 class="newslider__content--heading">Socially Adopt an Underprivileged Girl and Provide Her Health & Education</h1>
+                        <!-- <a href="founder.html" class="newslider__content--button">Devendra  - Founder Ladli  Foundation6</a> -->
+                    </div>
+                    <div class="newslider__content--contentbox">
+                        <h1 class="newslider__content--heading">Changing the mindset of the society about women is the real Women Empowerment</h1>
+                        <a href="founder.html" class="newslider__content--button">Devendra Kumar Gupta</a>
+                    </div>
+                </div>
+                <div class="newslider__buttons">
+                    <div class="newslider__buttons--button left">
+                        <svg>
+                            <use href="./svg/sprite.svg#icon-chevron-left"></use>
+                        </svg>
+                    </div>
+                    <div class="newslider__buttons--button right">
+                        <svg>
+                            <use href="./svg/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/newslider.js"></script>
+        <!--#######################        TARGET           ###################################-->
+        <div class="bpage">
+
+           
+                <h1 class="bpage__heading" style="text-align: center;font-weight: bold;">
+                   We are the Crusaders against Victimization.
+                </h1>
+                <p class="bpage__paragraph" style="text-align: center;">
+                    Ladli Foundation Trust, is a well-known Grassroot level Non-Political, Non-Profit Organization effectively working in 50 districts across 10 States in India. It is a registered entity under Indian trust Act, FCRA, Niti Ayog etc. Ladli Foundation is also in Special Consultative Status in Economic and Social Council (ECOSOC) Since-2020 and for its effective community outreach it has been granted the official association with Delhi Police &amp; other Govt. Departments. 
+                </p>
+                <p class="bpage__paragraph" style="text-align: center;">
+                    In the past eight years the organization has gained recognition through its Innovative initiatives for empowering lakhs of underprivileged, Uneducated females, males and Person with Disabilities residing in highly sensitive urban and rural slums.  
+                </p>
+                <p class="bpage__paragraph" style="text-align: center;">
+                    Ladli Foundation is also known for Innovating highly impactful initiatives that has been successfully implemented at grassroot level for uplifting socially victimized females &amp; has directly benefited to 1 Million+ Underprivileged People with the aim of improving their living condition &amp; quality of life in dignified manner.            
+                </p>
+                <p class="bpage__paragraph" style="text-align: center;">The initiatives &amp; programs organized by Ladli Foundation have been witnessed &amp; praised by the <strong>Home Minister of India, Union Social Justice Minister, Bollywood Megastar Shri Amitabh Bachchan, Cabinet Ministers, International Diplomats, government officials and well-known dignitaries for its national level presence</strong> and innovative initiatives like Covid19 Pandemic Relief Project, Saheli, LaadliKanyaPujan, RunForLadli, LadliRakshak, JOSH, SashaktDivyang, Shagun mass weddings, for providing primary healthcare, education, livelihood, and sensitization respectively.</p>
+
+        </div>
+        <!--######################          INITIATIVES     ###################################-->
+        <div class="initiatives">
+            <h4 class="initiatives__heading">
+                Initiatives
+            </h4>
+            <p class="initiatives__paragraph">
+                For the last 8 years, Ladli Foundation has been involved in enhancing the standard of living and restoring the dignity of socially victimized women while sensitizing the male population as well to uphold the ideas of Gender Equality to build an inclusive society. Til l n ow, the foundation has directly benefitted over 1 Million People through its intensive community outreach, innovative initiatives and ad ministrative collaborations.
+            </p>
+            <div class="initiatives__logos">
+                <a href="#" class="initiatives__logos--logolinkbox">
+                    <img src="svg/saheli.svg" alt="" class="initiatives__logos--logo">
+                    <p class="initiatives__logos--name">
+                        saheli
+                    </p>
+                    <div class="initiatives__logos--arrow">
+                    </div>
+                    <p class="initiatives__logos--number">
+                        2.75Lac+
+                    </p>
+                    <p class="initiatives__logos--paragraph">
+                        Females were benefited with Primary Healthcare & Sensitized about MHL, WASH, Sexual Abuse & Well Being
+                    </p>
+                </a>
+                <a href="#" class="initiatives__logos--logolinkbox">
+                    <img src="svg/sashakt.svg" alt="" class="initiatives__logos--logo">
+                    <p class="initiatives__logos--name">
+                        sashakt
+                    </p>
+                    <div class="initiatives__logos--arrow">
+                    </div>
+                    <p class="initiatives__logos--number">
+                        16000+
+                    </p>
+                    <p class="initiatives__logos--paragraph">
+                        People wre provided vocational training for upliftment of their status
+                    </p>
+                </a>
+                <a href="#" class="initiatives__logos--logolinkbox">
+                    <img src="svg/sashakt_divyang.svg" alt="" class="initiatives__logos--logo">
+                    <p class="initiatives__logos--name">
+                        sashakt divyang
+                    </p>
+                    <div class="initiatives__logos--arrow">
+                    </div>
+                    <p class="initiatives__logos--number">
+                        7500+
+                    </p>
+                    <p class="initiatives__logos--paragraph">
+                        Persons with disabilites were sesitized about RPWD act and were provided of Job Fair & Exhibition
+                    </p>
+                </a>
+                <a href="#" class="initiatives__logos--logolinkbox">
+                    <img src="svg/josh.svg" alt="" class="initiatives__logos--logo">
+                    <p class="initiatives__logos--name">
+                        josh
+                    </p>
+                    <div class="initiatives__logos--arrow">
+                    </div>
+                    <p class="initiatives__logos--number">
+                        4000+
+                    </p>
+                    <p class="initiatives__logos--paragraph">
+                        Young Boys and Juveniles gave up on drug addiction through sports
+                    </p>
+                </a>
+            </div>
+            <p class="initiatives__title">
+                server over one million benificieries
+            </p>
+            <div class="initiatives__logos">
+                <a href="#" class="initiatives__logos--logolinkbox">
+                    <img src="svg/RAHAT_SEVA.svg" alt="" class="initiatives__logos--logo">
+                    <p class="initiatives__logos--name">
+                        ladli rakshak
+                    </p>
+                    <div class="initiatives__logos--arrow">
+                    </div>
+                    <p class="initiatives__logos--number">
+                        4.75Lac+
+                    </p>
+                    <p class="initiatives__logos--paragraph">
+                        Males were involved in exclusive gender Senstization Program and Pledged to support gender equality
+                    </p>
+                </a>
+                <a href="#" class="initiatives__logos--logolinkbox">
+                    <img src="svg/saheli.svg" alt="" class="initiatives__logos--logo">
+                    <p class="initiatives__logos--name">
+                        kanya pujan
+                    </p>
+                    <div class="initiatives__logos--arrow">
+                    </div>
+                    <p class="initiatives__logos--number">
+                        4500+
+                    </p>
+                    <p class="initiatives__logos--paragraph">
+                        Adolsescent girls were socially adopted for providing Education & Health by following traditional beliefs & rituals
+                    </p>
+                </a>
+                <a href="#" class="initiatives__logos--logolinkbox">
+                    <img src="svg/shagun.svg" alt="" class="initiatives__logos--logo">
+                    <p class="initiatives__logos--name">
+                        shagun
+                    </p>
+                    <div class="initiatives__logos--arrow">
+                    </div>
+                    <p class="initiatives__logos--number">
+                        1700+
+                    </p>
+                    <p class="initiatives__logos--paragraph">
+                        Socially Victimized Women were saved from clutches of sex rackets and rehabilitated through mass weddings
+                    </p>
+                </a>
+                <a href="#" class="initiatives__logos--logolinkbox">
+                    <img src="svg/RAHAT_SEVA.svg" alt="" class="initiatives__logos--logo">
+                    <p class="initiatives__logos--name">
+                        rahat sewa
+                    </p>
+                    <div class="initiatives__logos--arrow">
+                    </div>
+                    <p class="initiatives__logos--number">
+                        2.5Lac+
+                    </p>
+                    <p class="initiatives__logos--paragraph">
+                        Migrant Labourers, Regugees, Domestic workers were provided Dry Ration, Masks, Covid Protection Kits etc
+                    </p>
+                </a>
+            </div>
+        </div>
+         <!--#######################         SLOGAN          ###################################-->
+        <div class="slogan">
+
+            <img src="images/1577084466_devendra-kumar-gupta.png" alt="" class="slogan__background">
+
+            <div class="slogan__container">
+                <h1 class="slogan__heading" style="font-weight: 400;">
+                    Ladli Foundation Trust was founded in 2012 by Mr. Devendra kr. Gupta, who was Born in a slum of Delhi in an underprivileged family. He embarked his journey where his parents left him alone at the age of two years with his 3 days infant sister, to face the world with full of hardships.<br> At the age of 13, he started with his social endeavours for the welfare of the lower strata of the society from where he belongs too. After living through the miseries, himself, he started his grass root research to evaluate the status quo of destitute unmarried girls, which was the stepping stone for him to establish Ladli Foundation Trust.<br> His effective community outreach &amp; sensitization programs diverted young boys &amp; juveniles from substance abuse and organized criminal rackets through Sports (kabaddi) and orientation which brought about a sensational impact in the lower sections of the society and he was conferred with the National Youth Award by Govt. of India. He was also nominated officially by Ministry of Social Justice, Government of India, for the prestigious Padma Shri Award-2020 (4th Highest Civilian Award of India) for his 20 years of extraordinary social contribution that has changed the lives of millions of underprivileged and uneducated people in India. 
+    
+                </h1>
+                
+                <a href="founder.html" class="slogan__link">Know More</a>
+                
+            </div>
+            <div class="slogan__button">
+                <div class="slogan__button--triangle"></div>
+            </div>
+            <div class="slogan__subcontainer">
+                <p class="slogan__subcontainer--paragraph">
+                    “You may not Received much in your legacy.But society will bequeath you with greater things be willing to accept “
+                </p>
+                <p class="slogan__subcontainer--name">-Devendra Kumar Gupta</p>
+            </div>
+        </div>
+<script>
+let allslogans = document.querySelectorAll('.slogan');
+console.log(allslogans);
+Array.from(allslogans).forEach( slogan => {
+    function sloganscroll(e){
+        if( slogan.getBoundingClientRect().top < window.innerHeight/3 ){
+            slogan.classList.add('select');
+            window.removeEventListener('scroll',sloganscroll);
+        }
+    }
+    window.addEventListener('scroll',sloganscroll);
+} )
+</script>
+        <!--#######################         CAUSES          ###################################-->
+        <div class="causes">
+            <h1 class="causes__heading">Thematic Areas </h1>
+            <p class="causes__paragraph">For the last 8 years, Ladli Foundation has been involved in enhancing the standard of living and restoring the dignity of socially victimized women while sensitizing the male population as well to uphold the ideas of Gender Equality to build an inclusive society. Till now, the foundation has directly benefitted over 1 Million People through its intensive community outreach, innovative initiatives and administrative collaborations. </p>
+            <div class="causes__container">
+                <div class="causes__containerbox grid">
+                    <div class="cause">
+                        <img src="images/img-1.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-2.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-3.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-4.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-5.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-5.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+        <!--######################          HUNGRY          ###################################-->
+        <div class="hungry" style="display: none;align-items: center;justify-content: center;">
+            <div class="hungry__left" style="display: none;">
+
+                <h1 class="hungry__left--heading">
+                   Thematic Area  &amp; Initiatives
+                </h1>
+                <p class="hungry__left--paragraph">
+                    For the last 10 years, Ladli foundation is involved in enhancing the standards of living and restoring the dignity of socially victimized women and girls where we have directly benefited and saved 2.25 Lakh+ underprivileged females from life threatening communicable diseases and sensitized more than 6 lac adolescents, women, men &amp; persons with disabilities concerning about MHM, sexual abuse, gender discrimination and substance abuse through our successfully implemented projects at the grass root level.
+                </p>
+                <p class="hungry__left--more">Ongoing Projects</p>
+                <div class="hungry__left--moregrid">
+                    <div class="hungry__left--moreitem">
+                        <div class="hungry__left--moreiconbox">
+                            <img src="svg/RAHAT_SEVA.svg" alt="" class="hungry__left--moreicon">
+                        </div>
+                        <div class="hungry__left--moredetails">
+                            <a href="#" class="hungry__left--moreheading">
+                                Rahat Seva
+                            </a>
+                            <p class="hungry__left--moreparagraph">
+                                Covid relief towards the distribution of essential rations, dry food, masks, hand sanitizers and stationary to children.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hungry__left--moreitem">
+                        <div class="hungry__left--moreiconbox">
+                            <img src="svg/saheli.svg" alt="" class="hungry__left--moreicon">
+                        </div>
+                        <div class="hungry__left--moredetails">
+                            <a href="#" class="hungry__left--moreheading">
+                                Saheli
+                            </a>
+                            <p class="hungry__left--moreparagraph">
+                            Females are benefited with primary healthcare and senitized about MHM, WASH, sexual abuse and well being.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hungry__left--moreitem">
+                        <div class="hungry__left--moreiconbox">
+                            <img src="svg/josh.svg" alt="" class="hungry__left--moreicon">
+                        </div>
+                        <div class="hungry__left--moredetails">
+                            <a href="#" class="hungry__left--moreheading">
+                                Josh
+                            </a>
+                            <p class="hungry__left--moreparagraph">
+                                Diverting young boys &amp; from Substance Abuse by involving them in Sports and skill development.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hungry__left--moreitem">
+                        <div class="hungry__left--moreiconbox">
+                            <img src="svg/shagun.svg" alt="" class="hungry__left--moreicon">
+                        </div>
+                        <div class="hungry__left--moredetails">
+                            <a href="#" class="hungry__left--moreheading">
+                                Shagun
+                            </a>
+                            <p class="hungry__left--moreparagraph">
+                                Magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hungry__left--moreitem">
+                        <div class="hungry__left--moreiconbox">
+                            <img src="svg/sashakt_divyang.svg" alt="" class="hungry__left--moreicon">
+                        </div>
+                        <div class="hungry__left--moredetails">
+                            <a href="#" class="hungry__left--moreheading">
+                                Sashakt Divyang
+                            </a>
+                            <p class="hungry__left--moreparagraph">
+                             People with special needs are provided with the sanitization under RPWD act and envolved in job fair and exhibitions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="hungry__left--moreitem">
+                        <div class="hungry__left--moreiconbox">
+                            <img src="svg/swabhimaan.svg" alt="" class="hungry__left--moreicon">
+                        </div>
+                        <div class="hungry__left--moredetails">
+                            <a href="#" class="hungry__left--moreheading">
+                                Swabhiman
+                            </a>
+                            <p class="hungry__left--moreparagraph">
+                                Magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hungry__right" style="width: 85%;max-width: 80rem;">
+                <img src="images/about.png" alt="" class="hungry__right--image">
+            </div>
+        </div>
+         <!--#######################         Projects          ###################################-->
+        <div class="causes">
+            <h1 class="causes__heading">Ongoing Projects </h1>
+            <p class="causes__paragraph">For the last 8 years, Ladli Foundation has been involved in enhancing the standard of living and restoring the dignity of socially victimized women while sensitizing the male population as well to uphold the ideas of Gender Equality to build an inclusive society. Till now, the foundation has directly benefitted over 1 Million People through its intensive community outreach, innovative initiatives and administrative collaborations. </p>
+            <div class="causes__container">
+                <div class="causes__containerbox grid">
+                    <div class="cause">
+                        <img src="images/img-1.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-2.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-3.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-4.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-5.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-5.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading" style="visibility: hidden;">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate" style="visibility: hidden;">Contribute Now</a>
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+        <!--########################        MEGA EVENTS         #################################-->
+        <div class="megaevents">
+            <h1 class="megaevents__heading">
+                mega events
+            </h1>
+            <p class="megaevents__paragraph">
+                We know we cannot achieve gender equality or end discrimination through our projects alone. To shift the balance of power and transform traditional gender roles, we need to mobilise the support at the regional and national level
+            </p>
+            <div class="megaevents__grid">
+                <div class="megaevents__grid--item">
+                    <div class="megaevents__grid--youtube">
+                        <iframe src="https://www.youtube.com/embed/iC4mtKC2ID4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="megaevents__grid--title">
+                        Run for Laadli Half Marathon
+                    </p>
+                    <p class="megaevents__grid--paragraph">
+                        A revolutionary initiative to promote gender equality and women’s safety.
+                    </p>
+                </div>
+                <div class="megaevents__grid--item">
+                    <div class="megaevents__grid--youtube">
+                        <iframe src="https://www.youtube.com/embed/iC4mtKC2ID4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="megaevents__grid--title">
+                        Run for Laadli Half Marathon
+                    </p>
+                    <p class="megaevents__grid--paragraph">
+                        A revolutionary initiative to promote gender equality and women’s safety.
+                    </p>
+                </div>
+                <div class="megaevents__grid--item">
+                    <div class="megaevents__grid--youtube">
+                        <iframe src="https://www.youtube.com/embed/iC4mtKC2ID4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="megaevents__grid--title">
+                        Run for Laadli Half Marathon
+                    </p>
+                    <p class="megaevents__grid--paragraph">
+                        A revolutionary initiative to promote gender equality and women’s safety.
+                    </p>
+                </div>
+                <div class="megaevents__grid--item">
+                    <div class="megaevents__grid--youtube">
+                        <iframe src="https://www.youtube.com/embed/iC4mtKC2ID4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="megaevents__grid--title">
+                        Run for Laadli Half Marathon
+                    </p>
+                    <p class="megaevents__grid--paragraph">
+                        A revolutionary initiative to promote gender equality and women’s safety.
+                    </p>
+                </div>
+                <div class="megaevents__grid--item">
+                    <div class="megaevents__grid--youtube">
+                        <iframe src="https://www.youtube.com/embed/iC4mtKC2ID4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="megaevents__grid--title">
+                        Run for Laadli Half Marathon
+                    </p>
+                    <p class="megaevents__grid--paragraph">
+                        A revolutionary initiative to promote gender equality and women’s safety.
+                    </p>
+                </div>
+                <div class="megaevents__grid--item">
+                    <div class="megaevents__grid--youtube">
+                        <iframe src="https://www.youtube.com/embed/iC4mtKC2ID4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="megaevents__grid--title">
+                        Run for Laadli Half Marathon
+                    </p>
+                    <p class="megaevents__grid--paragraph">
+                        A revolutionary initiative to promote gender equality and women’s safety.
+                    </p>
+                </div>
+                <div class="megaevents__grid--item">
+                    <div class="megaevents__grid--youtube">
+                        <iframe src="https://www.youtube.com/embed/iC4mtKC2ID4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="megaevents__grid--title">
+                        Run for Laadli Half Marathon
+                    </p>
+                    <p class="megaevents__grid--paragraph">
+                        A revolutionary initiative to promote gender equality and women’s safety.
+                    </p>
+                </div>
+                <div class="megaevents__grid--item">
+                    <div class="megaevents__grid--youtube">
+                        <iframe src="https://www.youtube.com/embed/iC4mtKC2ID4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="megaevents__grid--title">
+                        Run for Laadli Half Marathon
+                    </p>
+                    <p class="megaevents__grid--paragraph">
+                        A revolutionary initiative to promote gender equality and women’s safety.
+                    </p>
+                </div>
+            </div>
+        </div>
+         <!--#######################         NTESTIMONIALS        ###############################-->
+        <div class="ntestimonials" style="display: none;">
+            <div class="ntestimonials__left">
+                <h4 class="ntestimonials__left--heading">
+                    Our Contribution towards the society
+                </h4>
+                <div class="ntestimonials__left--testimonialscontainer" data-left="0" data-element="0">
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Ladli Foundation Trust
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                                Total girls saved from dropping out of school
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Ladli Foundation Trust
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                          Females sanitized through our project: Saheli</p>
+                        </div>
+                    </div>
+                    <div class="ntestimonials__left--testimonial">
+                        <div class="ntestimonials__left--testimonialcontent">
+                            <p class="ntestimonials__left--name">
+                                Ladli Foundation Trust
+                            </p>
+                            <p class="ntestimonials__left--paragraph">
+                            Females in slums were provided with the complete medical health checkup
+                            </p>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div class="ntestimonials__left--buttons">
+                    <div class="ntestimonials__left--button left">
+                        <svg>
+                            <use href="svg/sprite.svg#icon-chevron-left"></use>
+                        </svg>
+                    </div>
+                    <div class="ntestimonials__left--button right">
+                        <svg>
+                            <use href="svg/sprite.svg#icon-chevron-right"></use>
+                        </svg>
+                    </div>
+                </div>
+<script>
+var ntestimonialsbuttons = document.querySelectorAll('.ntestimonials__left--button');
+Array.from(ntestimonialsbuttons).forEach( (button,index) => {
+
+    function movetowardsright( container ){
+        //debugger;
+        let cleft = parseInt(container.getAttribute('data-left'));
+        let celement = parseInt(container.getAttribute('data-element'));
+
+        if( celement -1 < -1 )
+            return;
+
+        let elementwidth = container.children[celement].getBoundingClientRect().width;
+
+        if( cleft + elementwidth >=0 ){
+            container.style.left = '0px';
+            container.setAttribute('data-left','0');
+            container.setAttribute('data-element','0');
+        }else{
+            container.style.left = cleft + elementwidth+'px';
+            container.setAttribute('data-left',cleft + elementwidth);
+            container.setAttribute('data-element',celement-1);
+        }
+
+        console.log(container.getAttribute('data-element'));
+    }
+
+    function movetowardsleft( container ){
+        //debugger;
+        let cleft = parseInt(container.getAttribute('data-left'));
+        let celement = parseInt(container.getAttribute('data-element'));
+        if( container.childElementCount <= celement+1 ){
+            return;
+        }
+
+        let elementwidth = container.children[celement].getBoundingClientRect().width;
+
+        if(-1*cleft + elementwidth + container.parentElement.getBoundingClientRect().width >= container.getBoundingClientRect().width ){
+            container.style.left = -container.getBoundingClientRect().width + container.parentElement.getBoundingClientRect().width+'px';
+            //console.log(-container.getBoundingClientRect().width + container.parentElement.getBoundingClientRect().width);
+            container.setAttribute('data-left',-container.getBoundingClientRect().width + container.parentElement.getBoundingClientRect().width);
+        }else{
+            container.style.left = cleft - elementwidth + 'px';
+            container.setAttribute('data-left',cleft - elementwidth);
+            console.log(cleft - elementwidth);
+            container.setAttribute('data-element',celement+1);
+        }
+
+        console.log(container.getAttribute('data-element'));
+
+    }
+
+    button.addEventListener( 'click',function(){
+        if( button.classList.contains('left') ){
+            movetowardsleft( button.parentElement.parentElement.querySelector('.ntestimonials__left--testimonialscontainer') );
+        }else{
+            movetowardsright( button.parentElement.parentElement.querySelector('.ntestimonials__left--testimonialscontainer') );
+        }
+    } );
+} );
+</script>
+            </div>
+            <div class="ntestimonials__right" style="display: none;">
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">2</span>
+                            <span class="false">1</span>
+                            <span class="false">3</span>
+                            <span class="false">4</span>
+                            <span class="false">5</span>
+                            <span class="false">6</span>
+                            <span class="false">7</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">0</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                         <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                        +
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        Girls Education
+                    </p>
+                </div>
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">5</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                         <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+
+                        </p>
+                         <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+     
+                        </p>
+                         <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+     
+                        </p>
+                         <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>     
+                        </p>
+                        +
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        Girls Sanitized
+                    </p>
+                </div>
+                <div class="ntestimonials__right--row">
+                    <div class="ntestimonials__right--numberbox">
+                        <p class="ntestimonials__right--number top">
+                            <span class="true">1</span>
+                            <span class="false">1</span>
+                            <span class="false">2</span>
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="false">0</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            
+                        </p>
+                        <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>
+                         <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+
+                        </p>
+                         <p class="ntestimonials__right--number bottom">
+                            <span class="true">0</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                            <span class="false">0</span>
+                            <span class="false">9</span>
+                            <span class="false">8</span>
+                            <span class="false">7</span>
+                            <span class="false">6</span>
+                            <span class="false">5</span>
+                            <span class="false">4</span>
+                            <span class="false">3</span>
+                            <span class="false">2</span>
+                            <span class="false">1</span>
+                        </p>                       
+                        +
+                    </div>
+                    <p class="ntestimonials__right--numberfor">
+                        Medical Checkup
+                    </p>
+                </div>
+
+            </div>
+        </div>
+<script>
+
+var page = {
+    y : undefined
+}
+
+window.addEventListener('scroll',function(e){
+    page.y = window.pageYOffset;
+});
+
+var allntestimonialnumbers = document.querySelectorAll('.ntestimonials__right--number');
+Array.from(allntestimonialnumbers).forEach( (number,index) => {
+    let children = number.children;
+    let childheight = children[0].getBoundingClientRect().height;
+    if( number.classList.contains('top') ){
+        number.style.bottom = (children.length-1)*childheight - 20+'px';
+    }else{
+        number.style.top = -1*(children.length-3)*childheight + 17+'px';
+    }
+
+    function numberscroll(e){
+        //console.log(number.getBoundingClientRect().top);
+        if( number.parentElement.getBoundingClientRect().top < window.innerHeight/1.5  ){
+            if( number.classList.contains('top') ){
+                number.style.bottom = '0px';
+            }else{
+                number.style.top = '0px';
+            }
+            window.removeEventListener('scroll', numberscroll);
+        }
+    }
+
+    window.addEventListener( 'scroll', numberscroll );
+
+} );
+</script>
+        <!--######################          Mega Events        ##################################-->
+
+        <div class="content" style="display: none;">
+            <h1 class="causes__heading2">Our Mega Events </h1>
+            <div class="content__grid right">
+                <div class="content__grid--right">
+                    <div class="content__grid--videobox"></div>
+                    <img src="images/f1.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--left">
+                    <h6 class="content__grid--heading">
+                        Run For Ladli
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        Born in Slums of South Delhi, Devendra embarked his journey where he was left alone to face a world full of hardships. His parents left him and his 3-days old infant sister with their paternal aunt, who since then looked after both the siblings. <strong>At the age of 13</strong>, Devendra devoted his life &amp; started a journey for the welfare of unprivileged with St. John Ambulance wing of Indian Red Cross as Cadet Volunteer.<br><br><strong>A National Award Winner</strong>, grass-root level social worker, rehabilitator to a multitude of unprivileged slum girls, Devendra is a<strong><i> “True Hero”</i></strong> as commended by the legend Mr. Amitabh Bachchan for his extraordinary commitments to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse.<br><br>Devendra is also officially nominated for prestigious Padma Shri Award-2019. (4th Highest Civilian Award of India) by Ministry of Social Justice, Government of India, for his extraordinary &amp; revolutionary changes in the society.<br><br> <strong>”Run for Laadli Half Marathon“</strong> organised in association with <strong>Delhi Police</strong> is an outcome of efforts of Devendra Kumar Gupta towards the cause: <strong>gender equality &amp; women safety. Inaugurated in presence of more than 20 thousand people, the project was widely praised by the Guest of Honor Rajnath Singh, Home Minister 2017</strong>. The success of the event rejoiced across the nation with wide media coverage.
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="content__grid left">
+                <div class="content__grid--left">
+                    <div class="content__grid--videobox"></div>
+                    <img src="images/f2.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--right">
+                    <h6 class="content__grid--heading">
+                        Other noteworthy initiatives
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        <strong>Over 2 lac male population</strong> motivated about gender equality and stop crimes against women through unique street plays and exclusive gender sensitization program. <strong>More than 65000 mothers &amp; daughters</strong> in slums have been provided free medical health checkup including blood test and individual counselling about mensuration hygiene, sexual abuse &amp; STD’s through Saheli initiative.<br><br> <strong>Rehabilitated more than 1750 unprivileged girls</strong> by facilitating their complete marriage expenses through his innovative mass wedding concept. Provided free computer &amp; English training to <strong>more than 13 thousand women out of which mostly females employed for respectable jobs</strong>. De -addicted thousands of juveniles and young boys from substance abuse through his distinctive Initiative named <strong>“JOSH” (Enthusiasm) stands for Juveniles Orientation Through Sports &amp; Health</strong>. Which also includes counselling to divert them from clutches of criminal rackets &amp; orients them to become an asset for the society.<br><br> Successfully saved thousands of Girls from leaving their studies, by relocating the existing schools in deserted areas. His efforts made the concerned authority to reverse its decision of relocation of the school and the same has been appreciated by NATIONAL MEDIA.<br><br><i>“Changing the mindset of the society about women is the Real Women Empowerment"</i> - Devendra Kumar Gupta
+                    </p>
+                </div>
+            </div>
+            <div class="content__grid right">
+                <div class="content__grid--right">
+                    <img src="images/f3.jpg" alt="" class="content__grid--image">
+                </div>
+                <div class="content__grid--left">
+                    <h6 class="content__grid--heading">
+                        About
+                    </h6>
+                    <p class="content__grid--paragraph">
+                        <strong>Devendra, A Slum born National Award Winner by Govt of India</strong>, a grass-root level social reformer &amp; rehabilitator to a multitude of unprivileged slum girls. Commended as True Hero by the legendary superstar <strong>Mr. Amitabh Bachchan</strong> for his extraordinary commitments to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. He is the Founder of Renowned <strong>Ladli Foundation Trust</strong>, empowering and changing lives of lakhs of females in slums at large.<br><br> He vision of an egalitarian society has succeeded in percolating to the lowest strata of the society, saving thousands of women from social and sexual exploitation. For the past 20 years, he is working to enhance the quality of life of unprivileged youth in slums across India. <strong>He is known for pioneering innovative projects benefitting millions of unprivileged Indians and transforming their lives.</strong><br><br> Devendra envisages a gender-neutral country by endeavouring to bring a change in the mindsets of the people. He aims to establish the LARGEST-EVER WORKFORCE of volunteers called LAADLI RAKSHAKS (Savior of Women) for promotion of the cause of gender equality and women safety. His creative projects are awarded the official association of the True Hero, for its effective ground activities, outreach and conceptualizations such as #RunForLaadli, <strong>#LaadliRakshak, #Saheli,</strong> and many more. Devendra has been a harbinger of progressive movements in society, which has treated its daughters like a burden for a very long time. He is extensively working with a large number of illiterate, unprivileged, schedule caste and handicapped women, forced or trapped in the illegal trades. <br><br><i>“Life is a book, people in life are chapters, every chapter will teach you something.”</i> <strong>- Devendra Kumar Gupta</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--#######################         CHARITY         ###################################-->
+        <div class="charity">
+            <h1 class="charity__heading">
+                Our Campaign 
+            </h1>
+            <div class="charity__grid">
+                <div class="charity__grid--card">
+                    <img src="images/charity-1.jpg" alt="" class="charity__grid--image">
+                    <a href="#" class="charity__grid--charity">
+                        Charity
+                    </a>
+                    <a href="#" class="charity__grid--heading">
+                        Dilemmas of Daughters born in 1980s
+                    </a>
+                    <p class="charity__grid--date">
+                        03 JUL 2020
+                    </p>
+                </div>
+                <div class="charity__grid--card">
+                    <img src="images/charity-2.jpg" alt="" class="charity__grid--image">
+                    <a href="#" class="charity__grid--charity">
+                        Charity
+                    </a>
+                    <a href="#" class="charity__grid--heading">
+                        Feminism In Terms Of Ladli
+                    </a>
+                    <p class="charity__grid--date">
+                        10 JAN 2020
+                    </p>
+                </div>
+                <div class="charity__grid--card">
+                    <img src="images/charity-3.jpg" alt="" class="charity__grid--image">
+                    <a href="#" class="charity__grid--charity">
+                        Charity
+                    </a>
+                    <a href="#" class="charity__grid--heading">
+                        Taking care of people in need 
+                    </a>
+                    <p class="charity__grid--date">
+                        23 DEC 2019
+                    </p>
+                </div>
+                  <div class="charity__grid--card">
+                    <img src="images/charity-3.jpg" alt="" class="charity__grid--image">
+                    <a href="#" class="charity__grid--charity">
+                        Charity
+                    </a>
+                    <a href="#" class="charity__grid--heading">
+                        Taking care of people in need 
+                    </a>
+                    <p class="charity__grid--date">
+                        23 DEC 2019
+                    </p>
+                </div>
+                  <div class="charity__grid--card">
+                    <img src="images/charity-3.jpg" alt="" class="charity__grid--image">
+                    <a href="#" class="charity__grid--charity">
+                        Charity
+                    </a>
+                    <a href="#" class="charity__grid--heading">
+                        Taking care of people in need 
+                    </a>
+                    <p class="charity__grid--date">
+                        23 DEC 2019
+                    </p>
+                </div>
+                  <div class="charity__grid--card">
+                    <img src="images/charity-3.jpg" alt="" class="charity__grid--image">
+                    <a href="#" class="charity__grid--charity">
+                        Charity
+                    </a>
+                    <a href="#" class="charity__grid--heading">
+                        Taking care of people in need 
+                    </a>
+                    <p class="charity__grid--date">
+                        23 DEC 2019
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <!--#######################         TESTIMONIALS    ##################################-->
+        <div class="testimonials">
+            <h1 class="testimonials__heading">
+                A few words from the dignitaries!
+            </h1>
+            <p class="testimonials__paragraph">
+                Find out about the dignataries  and their word they have to say about Ladli Foundation Trust.
+            </p>
+            <div class="testimonials__container">
+                <div class="testimonials__container--subcontainer">
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test4.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Sh. Rajnath Singh
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                Hon’ble Home Minister Of India (2017) 
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 "I would congratulate Ladli Foundation to organize this commendable program in association with Delhi Police. I praise them deeply from my heart for this applaudable program and to make it so successful with huge participation. I firmly believe that the thought of this program will make it a milestone for the safety of women."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test1.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Sh. Amitabh Bachchan
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                Bollywood Megastar
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/gehloth.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Sh. Thaawarchand Gehlot
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                Hon’ble Union Minister Of Social Justice & Empowerment, Govt. Of India (2019)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                "Many NGO’s are working with our ministry for social welfare out of which Ladli Foundation Trust is working exceptionally as main NGO among all. I deeply appreciate the efforts Mr Devendra kr. Gupta, Founder of Ladli Foundation Trust for doing extraordinary work for empowering PwD’s and Socially Victimized People."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test2.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Swami Avdheshanand Giri Maharaj
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                International Spiritual Leader &amp; Acharaya Mahamandleshwar (2019)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                "Ladli Foundation is doing amazingly for the welfare of underprivileged section of the society. I deeply Appreciate endless devotion of Team Ladli for enhancing the quality of life of socially victimized females.The efforts of Ladli Foundation presenting the Vedic Proclamation of preservation of a ‘woman’s respect and dignity’ in a timely manner and realizing the dream of ‘Beti Bachao Beti Padhao’."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test8.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                H E Joanna Kempers 
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                H.E. High Commissioner Of New Zealand (2017)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 “The thing I really like about this initiative is that it engages both men and women. It is important that we teach our women to be strong and independent. But it is equally important that we teach our boys to respect women.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test9.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Justice Gita Mittal
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                Chief Justice, Delhi High Court (2017)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 “Ladli Foundation Trust and its team is doing exemplary work for the safety and empowerment of women in the society.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test6.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Shri Pratap Shukla
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                Former Finance Minister
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                “Women safety is not only our social responsibility but is an inherited value. Ladli’s initiatives highlights various sensitive issues w.r.t. women in the society and reflects how much needs to be done in this regard. Ladli Foundation Trust has various initiatives which are unique and has a holistic approach. Their work in this area is commendable and should be seen as a great example to motivate others.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test7.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Shakuntla D Gamlin
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                IAS, Secretary Of Social Justice Empowerment &amp; Disabilities (2019)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                “I would like to congratulate Mr Devendra Gupta whose efforts and hard work has made events like Sashakt Divyang possible. When he came to me, I was inspired myself by his zeal and passion to work for people.I would urge people to take his example and the work that Ladli does and to contribute their share towards the society.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test5.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Shri Amulya Patnayak
+                            </p>
+                            <p class="testimonials__container--occupation">
+                               IPS, Commissioner Of Police , Delhi (2018)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 In the last few yearsâ€™ crimes against women has decreased in Delhi which is indeed a positive result. Our joint venture with Ladli Foundation Trust will be a milestone for the cause. Ladliâ€™s awareness and sensitization programs can contribute a lot to the society and can encourage more and more people to come forward for this cause.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test3.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Sh. Sanjay Beniwal
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                IPS, Director General Of Police , Chandigarh (2018)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 "I commend Ladli’s dedication and commitments to sensitize uneducated young females against sexual exploitation through their sincere efforts. Ladli’s innovative initiatives like Run for Ladli, Ladli Rakshak and Saheli etc. will surely be an effective tool to set milestone for gender equality and to reduce crimes against women with young girls of the underprivileged sections of society."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/viky.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Sh. Vicky Kaushal
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                Bollywood Celebrity
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 "I would like to congratulate the Delhi Police and Ladli Foundation Trust on Ladli's enthusiasm, to be able to steer kids and the youth in the right direction, through sports. It is a commendable initiative. I would also like to congratulate and wish the best of luck to the youth and the kids, who are a part of this initiative."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!--#######################         TESTIMONIALS    ##################################-->
+        <div class="testimonials">
+            <h1 class="testimonials__heading">
+                A few words from the beneficiaries!
+            </h1>
+            <p class="testimonials__paragraph">
+                Find out about the beneficiaries  and their word they have to say about Ladli Foundation Trust.
+            </p>
+            <div class="testimonials__container">
+                <div class="testimonials__container--subcontainer">
+
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test1.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Sh. Amitabh Bachchan
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                Bollywood Megastar
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test2.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Swami Avdheshanand Giri Maharaj
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                International Spiritual Leader &amp; Acharaya Mahamandleshwar (2019)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                "Ladli Foundation is doing amazingly for the welfare of underprivileged section of the society. I deeply Appreciate endless devotion of Team Ladli for enhancing the quality of life of socially victimized females.The efforts of Ladli Foundation presenting the Vedic Proclamation of preservation of a ‘woman’s respect and dignity’ in a timely manner and realizing the dream of ‘Beti Bachao Beti Padhao’."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test3.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Sh. Sanjay Beniwal
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                IPS, Director General Of Police , Chandigarh (2018)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 "I commend Ladli’s dedication and commitments to sensitize uneducated young females against sexual exploitation through their sincere efforts. Ladli’s innovative initiatives like Run for Ladli, Ladli Rakshak and Saheli etc. will surely be an effective tool to set milestone for gender equality and to reduce crimes against women with young girls of the underprivileged sections of society."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test4.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Sh. Rajnath Singh
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                Hon’ble Home Minister Of India (2017) 
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 "I would congratulate Ladli Foundation to organize this commendable program in association with Delhi Police. I praise them deeply from my heart for this applaudable program and to make it so successful with huge participation. I firmly believe that the thought of this program will make it a milestone for the safety of women."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test5.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Shri Amulya Patnayak
+                            </p>
+                            <p class="testimonials__container--occupation">
+                               IPS, Commissioner Of Police , Delhi (2018)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 In the last few yearsâ€™ crimes against women has decreased in Delhi which is indeed a positive result. Our joint venture with Ladli Foundation Trust will be a milestone for the cause. Ladliâ€™s awareness and sensitization programs can contribute a lot to the society and can encourage more and more people to come forward for this cause.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test6.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Shri Pratap Shukla
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                Former Finance Minister
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                “Women safety is not only our social responsibility but is an inherited value. Ladli’s initiatives highlights various sensitive issues w.r.t. women in the society and reflects how much needs to be done in this regard. Ladli Foundation Trust has various initiatives which are unique and has a holistic approach. Their work in this area is commendable and should be seen as a great example to motivate others.”
+                            </p>
+                        </div>
+                    </div>
+                      <div class="testimonials__container--testimonial">
+                        <img src="images/test7.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Shakuntla D Gamlin
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                IAS, Secretary Of Social Justice Empowerment &amp; Disabilities (2019)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                “I would like to congratulate Mr Devendra Gupta whose efforts and hard work has made events like Sashakt Divyang possible. When he came to me, I was inspired myself by his zeal and passion to work for people.I would urge people to take his example and the work that Ladli does and to contribute their share towards the society.”
+                            </p>
+                        </div>
+                    </div>
+                     <div class="testimonials__container--testimonial">
+                        <img src="images/test8.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                H E Joanna Kempers 
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                H.E. High Commissioner Of New Zealand (2017)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 “The thing I really like about this initiative is that it engages both men and women. It is important that we teach our women to be strong and independent. But it is equally important that we teach our boys to respect women.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonials__container--testimonial">
+                        <img src="images/test9.jpg" alt="" class="testimonials__container--image">
+                        <div class="testimonials__container--testimonialbox">
+                            <p class="testimonials__container--name">
+                                Justice Gita Mittal
+                            </p>
+                            <p class="testimonials__container--occupation">
+                                Chief Justice, Delhi High Court (2017)
+                            </p>
+                            <p class="testimonials__container--paragraph">
+                                 “Ladli Foundation Trust and its team is doing exemplary work for the safety and empowerment of women in the society.”
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--######################          BADGES          ###################################-->
+        <div class="badges">
+            <div class="badges__maincontainer">
+                <div class="badges__container" data-left="0" data-element="0">
+                    <div class="badges__badge">
+                        <img src="images/badge-1.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-2.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-3.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-4.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-5.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-6.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-7.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-8.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-9.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-10.png" alt="" class="badges__badge--image">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- <script>
+let allbadgescontainer = document.querySelectorAll('.badges__container');
+Array.from(allbadgescontainer).forEach( (container,index) => {
+    let timeout;
+    let hit = 'left';
+    let childrens = container.children;
+    let parent = container.parentElement;
+    function animate(){
+        let cleft = parseFloat(container.getAttribute('data-left'));
+        let celement = parseInt(container.getAttribute('data-element'));
+        let pwidth = parent.getBoundingClientRect().width;
+        let cwidth = container.getBoundingClientRect().width;
+        let ewidth = childrens[celement].getBoundingClientRect().width;
+        if( hit == 'left' ){
+            //moveleft
+            if( -1*cleft + pwidth + ewidth >= cwidth ){
+                container.style.left = pwidth - cwidth + 'px';
+                container.setAttribute('data-left',(pwidth - cwidth));
+                hit = 'right';
+            }else{
+                container.style.left = cleft - ewidth + 'px';
+                container.setAttribute( 'data-left',(cleft - ewidth) );
+                container.setAttribute( 'data-element',celement+1 );
+            }
+        }else{
+            //moveright
+            if( cleft + ewidth >= 0 ){
+                container.style.left = '0px';
+                container.setAttribute('data-left',0);
+                container.setAttribute('data-element',0);
+                hit = 'left';
+            }else{
+                container.style.left = cleft + ewidth + 'px';
+                container.setAttribute('data-left',(cleft + ewidth));
+                container.setAttribute('data-element',celement-1);
+            }
+        }
+        timeout = setTimeout(
+            function(){
+                animate();
+            },6200
+        )
+    }
+    timeout = setTimeout(
+        function(){
+            animate();
+        },6200
+    )
+} );
+</script> -->
+        <!--#######################         FOOTER          ###################################-->
+        <footer class="footer">
+            <div class="footer__grid">
+                <div class="footer__grid--cell">
+                    <img src="images/logo.jpg" alt="" class="footer__grid--image">
+                    <p class="footer__grid--paragraph">
+                        Strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal
+                    </p>
+                    <div class="footer__grid--socialbox">
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Address Location
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        9/277 Dakshin Puri Extn.<br> Dr. Ambedkar Nagar, <br>New Delhi 110062
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Phone: +91-9810171702
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Email: founder@ladlifoundation.com
+                    </p>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Quick Links
+                    </h4>
+                    <div class="footer__grid--links">
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Project</a>
+                        <a href="#" class="footer__grid--link">NEWS</a>
+                        <a href="#" class="footer__grid--link">Blog</a>
+                        <a href="#" class="footer__grid--link">Event</a>
+                        <a href="#" class="footer__grid--link">Contact</a>
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Saheli</a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Newsletter
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        You get notified when somthing new will appear.
+                    </p>
+                    <form action="#" class="footer__grid--newsform">
+                        <input type="text" placeholder="Your Email Here" name="footerEmail" id="footerEmail" class="footer__grid--text">
+                        <button class="footer__grid--submit">
+                            <svg class="footer__grid--submitIcon">
+                                <use href="svg/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright--paragraph">
+                    Copyright © 2020 Ladli Foundation, all rights reserved. Designed by: <a href="https://adhyay.co.in">Adhyay</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <div class="popuptestimonial">
+        <div class="popuptestimonial__closebutton">
+            X
+        </div>
+        <div class="popuptestimonial__imagebox">
+            <img src="#" alt="" class="popuptestimonial__imagebox--image">
+        </div>
+        <div class="popuptestimonial__contentbox">
+            <p class="popuptestimonial__contentbox--name">
+                Sh. Amitabh Bachan
+            </p>
+            <p class="popuptestimonial__contentbox--occupation">
+                Bollywood Megastar
+            </p>
+            <p class="popuptestimonial__contentbox--paragraph">
+                "I commend Mr. Devendra Kumar Gupta for founding the Ladli Foundation Trust and for his commitment to crusade and save the uneducated, unprotected girls from exploitation and sexual abuse. Citizens like him are the true heroes!"
+            </p>
+        </div>
+    </div>
+    <!--############################        YOUTUBE POPUP       ###############################-->
+    <div class="youtube">
+        <div class="youtube__close">
+            X
+        </div>
+        <div class="youtube__videobox">
+            <iframe src="https://www.youtube.com/embed/ODEUK5sB5vE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+<script>
+let allyoutubebuttons = document.querySelectorAll('.content__grid--videobox');
+
+Array.from(allyoutubebuttons).forEach(button=>{
+        button.addEventListener( 'click',function(){
+        document.querySelector('.youtube').classList.add('select');
+    } )
+})
+
+document.querySelector('.youtube__close').addEventListener( 'click',function () {
+    document.querySelector('.youtube').classList.remove('select');
+} )
+</script>
+
+</body>
+<script src="js/events.js"></script>
+<script src="js/causes.js"></script>
+<script src="js/testimonials.js"></script>
+</html>

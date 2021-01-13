@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladli Foundation Trust</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="body">
+        <!--########################        HEADER          ###################################-->
+        <header class="header absolute">
+            <div class="header__left">
+                <div class="header__left--logobox">
+                    <img src="images/logo.png" alt="" class="header__left--logo">
+                </div>
+                <div class="header__left--linkbox">
+                    <a href="index.html" class="header__left--link">Home</a>
+                    <a href="#" class="header__left--link header__left--dropdown select">About</a>
+                    <a href="#" class="header__left--link header__left--dropdown">Project</a>
+                    <a href="#" class="header__left--link header__left--dropdown">latest Project</a>
+                    <a href="#" class="header__left--link">News</a>
+                    <a href="#" class="header__left--link">Blog</a>
+                    <a href="#" class="header__left--link">Volunteer</a>
+                    <a href="#" class="header__left--link">contact</a>
+                </div>
+            </div>
+            <div class="header__right">
+                <a href="#" class="header__right--button">Contribute now</a>
+            </div>
+        </header>
+
+        <!--##########################          DROPDOWNS           ###########################-->
+
+        <div class="dropdown">
+           <a href="ourstory.html" class="dropdown__link">Our Story</a>
+            <a href="founder.html" class="dropdown__link">Founder</a>
+        </div>
+        <div class="dropdown">
+            <a href="saheli.html" class="dropdown__link">Saheli</a>
+            <a href="rahat-seva.html" class="dropdown__link">Rahat Seva</a>
+            <a href="josh.html" class="dropdown__link">Josh</a>
+            <a href="shagun.html" class="dropdown__link">Shagun</a>
+        </div>
+        <div class="dropdown">
+            <a href="sashakt-divyang.html" class="dropdown__link">Sashakt Divyang</a>
+            <a href="swabhiman.html" class="dropdown__link">Swabhiman</a>
+        </div>
+
+<script>
+var alldropdowns = document.querySelectorAll('.dropdown');
+var alldropdownlinks = document.querySelectorAll('.header__left--dropdown');
+
+Array.from( alldropdownlinks ).forEach( (link,index) => {
+    let dropdown = false;
+    link.addEventListener( 'mouseover', (e) => {
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } );
+    link.addEventListener( 'mouseleave',function(){
+        if( dropdown == false ){
+            alldropdowns[index].classList.remove('select');
+        }
+    } )
+    alldropdowns[index].addEventListener( 'mouseover',function(){
+        dropdown = true;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.add('select');
+    } )
+    alldropdowns[index].addEventListener( 'mouseleave',function(){
+        dropdown = false;
+        alldropdowns[index].style.left = (link.getBoundingClientRect().left - alldropdowns[index].getBoundingClientRect().width/4)+'px';
+        alldropdowns[index].classList.remove('select');
+    } )
+} )
+
+</script>
+
+        <!--#######################         BANNER          ###################################-->
+        <div class="banner">
+            <img src="images/banner.jpg" alt="" class="banner__image">
+        </div>
+        <!--#######################         OURSTORY        ###################################-->
+        <div class="ourstory">
+            <!--############################        ABOUT       ###############################-->
+            <div class="ourstory__about">
+                <h1 class="ourstory__about--heading">
+                    When hope is hungry everything feeds it.
+                </h1>
+
+                <div class="ourstory__about--leftimagebox">
+                    <img src="images/sah10.jpg" alt="" class="ourstory__about--leftimage">
+                    <p class="ourstory__about--paragraph">
+                        They say that a woman is a Goddess, a homemaker and the inner wheel of every family, but the irony is that she is still unsafe, she feels insecure and changed to the societal norms. On one hand, India at the moment is at the cusp of a major transformation, and on the other hand the National Capital Territory of India is termed as the ‘Rape Capital’. The cases of rape, molestation are only rising each year. The Nirbhaya Case being the rarest of the rare cases of it’s time, reflects upon the direction in which we are moving in, which brings us to the truth, that we live in a culture that normalises rape, violence and harassment against women, and that we see violence and misogyny as an expression or part of ‘tradition’ or ‘culture’ with our everyday use of sexist language and glorification of sexual violence. With each passing day women, the reported cases of eve-teasing, sexual harassment, dowry death, domestic violence are only rising. Then there are a number of cases which do not even get reported because of the shame and the izzat quotient attached to rape. <br><br>According to National Crime Record Bureau in every 15 minutes, there is one case of rape registered, where the offender is either a friend or a member of the victim’s family. Intrafamilial rape is usually neglected by the members of the family itself and often by the parents too. One of the biggest misconceptions around rape is the “other-ing” of both the criminal and the victim- that a “certain” type of man rapes and a certain type of woman gets raped (often under “certain” circumstances). The overwhelming complicity of perpetrators in familial positions of power, or those who are known to victims, is grossly understated. This can be directly linked to poverty, illiteracy and substance abuse.<br><br>Every year, a number of campaigns and programmes are organized throughout the world to create awareness among people about the crimes that are taking place against women and also to encourage Gender Equality. These sensitization initiatives should be encouraged more and more as they can bring definite changes in the society. It is certainly important to ask certain questions in this regard, i.e. what type of people are involved in it? What is their background? Which age group they largely fall into? and Whether they are literate or illiterate?<br><br>Current initiatives like Beti Bachao, Beti Padhao (Save Girl Child, Educate Girl Child) is a great tool for social change and a bright future. But the question which still remains is what about the daughters who were born 25 years ago in underprivileged families and who are not educated due to ignorance and poverty. They could never go to school due to questions like LADKI PADHKE KYA KAREGI, ISKI TO SHADI KARNI HAI, (why do they need education, after all, she has to get married). In today’s time these girls are living in the worst conditions and living everyday with exploitation and domestic violence by their own family members. The rate at which girls are trafficked every day, into flesh trade and sadly, it’s her parents who sell her off as have too many mouths to feed.<br><br>It is evident that the people living in slums of Delhi struggle every day for their basic sustenance which makes it difficult for them to marry off their daughters. Consequently, the unmarried girl of marriageable age becomes the victim of certain anti-social elements. In such an environment even when a girl or the family raises their voice, they will not be heard due to the izzat of the family is attached to the daughters of the family and usually, a counter argument is raised by the offenders, why can they not marry the girl if they want to protect her?
+                   </p>
+                </div>
+
+                <div class="ourstory__about--grid">
+                    <div class="ourstory__about--cell">
+                        <div class="ourstory__about--cellimagebox">
+                            <img src="svg/RAHAT_SEVA.svg" alt="" class="ourstory__about--cellimage">
+                        </div>
+                        <div class="ourstory__about--celldetailbox">
+                            <p class="ourstory__about--cellheading">
+                                Rahat Seva
+                            </p>
+                            <p class="ourstory__about--cellparagraph">
+                                Covid relief towards the distribution of essential rations, dry food, masks, hand sanitizers and stationary to children
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ourstory__about--cell">
+                        <div class="ourstory__about--cellimagebox">
+                            <img src="svg/sashakt_divyang.svg" alt="" class="ourstory__about--cellimage">
+                        </div>
+                        <div class="ourstory__about--celldetailbox">
+                            <p class="ourstory__about--cellheading">
+                                Sashakt Divyang
+                            </p>
+                            <p class="ourstory__about--cellparagraph">
+                                 People with special needs are provided with the sanitization under RPWD act and envolved in job fair and exhibitions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ourstory__about--cell">
+                        <div class="ourstory__about--cellimagebox">
+                            <img src="svg/saheli.svg" alt="" class="ourstory__about--cellimage">
+                        </div>
+                        <div class="ourstory__about--celldetailbox">
+                            <p class="ourstory__about--cellheading">
+                                Saheli
+                            </p>
+                            <p class="ourstory__about--cellparagraph">
+                                Females are benefited with primary healthcare and senitized about MHM, WASH, sexual abuse and well being.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ourstory__about--cell">
+                        <div class="ourstory__about--cellimagebox">
+                            <img src="svg/shagun.svg" alt="" class="ourstory__about--cellimage">
+                        </div>
+                        <div class="ourstory__about--celldetailbox">
+                            <p class="ourstory__about--cellheading">
+                                Shagun
+                            </p>
+                            <p class="ourstory__about--cellparagraph">
+                                Magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ourstory__about--cell">
+                        <div class="ourstory__about--cellimagebox">
+                            <img src="svg/swabhimaan.svg" alt="" class="ourstory__about--cellimage">
+                        </div>
+                        <div class="ourstory__about--celldetailbox">
+                            <p class="ourstory__about--cellheading">
+                                Swabhiman
+                            </p>
+                            <p class="ourstory__about--cellparagraph">
+                                Magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ourstory__about--cell">
+                        <div class="ourstory__about--cellimagebox">
+                            <img src="svg/josh.svg" alt="" class="ourstory__about--cellimage">
+                        </div>
+                        <div class="ourstory__about--celldetailbox">
+                            <p class="ourstory__about--cellheading">
+                                Education
+                            </p>
+                            <p class="ourstory__about--cellparagraph">
+                                Magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--############################        MISSIONS       ###############################-->
+            <div class="ourstory__missions">
+                <div class="ourstory__missions--card">
+                    <p class="ourstory__missions--cardheading">
+                       Our Agenda
+                    </p>
+                    <p class="ourstory__missions--cardparagarph">
+                        Plight of Slum females, Muslim minorities and their direct relation in spreading the life-threatening communicable diseases. 
+                    </p>
+                    <img src="images/m-1.jpg" alt="" class="ourstory__missions--cardimage">
+                </div>
+                <div class="ourstory__missions--card select">
+                    <p class="ourstory__missions--cardheading">
+                        Our Goal
+                    </p>
+                    <p class="ourstory__missions--cardparagarph">
+                       Domestic work a way to Human Trafficking, and sexual exploitation of young females.
+                    </p>
+                    <img src="images/m-1.jpg" alt="" class="ourstory__missions--cardimage">
+                </div>
+                <div class="ourstory__missions--card">
+                    <p class="ourstory__missions--cardheading">
+                        Our Approach
+                    </p>
+                    <p class="ourstory__missions--cardparagarph">
+                       Increasing crime and lack of awareness about rights of PwD's among them and society. 
+                    </p>
+                    <img src="images/m-1.jpg" alt="" class="ourstory__missions--cardimage">
+                </div>
+                
+            </div>
+            <div class="ourstory__about--rightimagebox">
+                <img src="images/sah11.jpg" alt="" class="ourstory__about--rightimage">
+                <p class="ourstory__about--paragraph">
+                    With each passing day women are facing problems like eve-teasing, sexual harassment, dowry death, domestic violence, murder etc. There are various cases which do not even get registered in India because of poverty, illiteracy and fear. According to National Crime Record Bureau in every 15 minutes, there is one case of rape which is registered in which around 96% of cases, the rapist is one among the known people or family. <br><br>Every year, many campaigns and programs are organized throughout the world to create awareness among people about the crimes that are taking place against women and also to encourage Gender Equality. These programs should be encouraged more and more as they can bring definite changes in the society. Now it is very important to concentrate on the fact that, what types of people are involved in it? From which social status they come from? What is their broad range of age? Whether they are literate or illiterate?<br><br>Current initiatives like Beti Bachao, Beti Padhao (Save Girl, educate Girl) is a great tool for social change and a bright future. But the question which still remains is what about the daughters who were born 25 years ago in unprivileged families and never got any education due to conservatism and poverty. They were suppressed under questions like LADKI PADHKE KYA KAREGI, ISKI TO SHADI KARNI HAI, (what she will do to get an education, after all, she has to get married). Nowadays these girls are living in worst situations and are facing exploitation and domestic violence by their own family members and by society sexually, financially and mentally. The alarming rates of girls being trafficked almost every single day, a young girl being trafficked into flesh trade and most of the times, its her parents who sell her off. <br><br>It is evident that the poor people living in camps or slum areas of Delhi struggle every day for their sustenance and hence are not economically capable of getting their daughters married at an appropriate age. Consequently, the unmarried girl of a marriageable age becomes the victim of certain anti-social elements. In such an environment if a girl or the family raises the voice in order to oppose, they are suppressed on the means of maintain respect of the family and the so called ‘IZZAT’ of the girl and usually, a counter argument comes into picture by the offenders, why they don’t marry the girl if they want to protect her? <br><br>With intensive fieldwork and research , Ladli Foundation found that the honour, self-respect and dignity of each woman is at stake and are under a constant fear and danger of either getting raped or being dragged into prostitution and various other kinds of social destructions exiting in the society where the weaker is always the victim . Keeping all these situations in mind and considering its own experiences Ladli foundation realized that the various criminal activities which are taking place against women are mostly done by their own family members or relatives. Generally, people who are into drugs, illiterate or surrounded by the heinous environment are the ones who can never treat men and women equal and will always uphold patriarchy as only norm of the society .
+                </p>
+            </div>
+        </div>
+        
+        <!--#######################         CAUSES          ###################################-->
+        <div class="causes">
+            <p class="causes__hashtag">OUR INITIATIVES</p>
+            <h1 class="causes__heading">Recent Activities</h1>
+            <div class="causes__container">
+                <div class="causes__containerbox">
+                    <div class="cause">
+                        <img src="images/img-1.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-2.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-3.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-4.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-5.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-1.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-2.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-3.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate">Donate Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-4.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate">Contribute Now</a>
+                    </div>
+                    <div class="cause">
+                        <img src="images/img-5.jpg" alt="" class="cause__image">
+                        <h4 class="cause__heading">
+                            Children's voices and opinions the heart of our media
+                        </h4>
+                        <a href="#" class="cause__donate">Contribute Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--######################          EVENTS          ###################################-->
+        <div class="events">
+            <div class="events__left">
+                <p class="events__left--hashtag">
+                    “A society is like a canvas, it’s you need to paint it beautifully.”
+                </p>
+                <h1 class="events__left--heading">
+                    Fundraising Mega Events
+                </h1>
+                <p class="events__left--paragraph">
+                    Magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window
+                </p>
+            </div>
+            <div class="events__right">
+                <div class="events__right--maincontainer">
+                    <div class="events__right--container">
+                        <div class="event">
+                            <img src="images/img-11.jpg" alt="" class="event__image">
+                            <a href="#" class="event__heading">
+                                Fuel fundraising with better events canada
+                            </a>
+                            <p class="event__date">
+                                Aug 25, 2020 (10 AM)
+                            </p>
+                        </div>
+                        <div class="event">
+                            <img src="images/img-12.jpg" alt="" class="event__image">
+                            <a href="#" class="event__heading">
+                                Fuel fundraising with better events canada
+                            </a>
+                            <p class="event__date">
+                                Aug 25, 2020 (10 AM)
+                            </p>
+                        </div>
+                        <div class="event">
+                            <img src="images/img-13.jpg" alt="" class="event__image">
+                            <a href="#" class="event__heading">
+                                Fuel fundraising with better events canada
+                            </a>
+                            <p class="event__date">
+                                Aug 25, 2020 (10 AM)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="events__right--buttons">
+                    <svg class="events__right--button left">
+                        <use href="svg/sprite.svg#icon-chevron-left"></use>
+                    </svg>
+                    <svg class="events__right--button right">
+                        <use href="svg/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!--######################          BADGES          ###################################-->
+        <div class="badges2">
+            <div class="badges__maincontainer">
+                <div class="badges__container">
+                    <div class="badges__badge">
+                        <img src="images/badge-1.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-2.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-3.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-4.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-5.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-6.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-7.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-8.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-9.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-10.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-5.png" alt="" class="badges__badge--image">
+                    </div>
+                    <div class="badges__badge">
+                        <img src="images/badge-6.png" alt="" class="badges__badge--image">
+                    </div>
+                </div>
+            </div>
+        </div>
+   
+            
+        <!--#######################         FOOTER          ###################################-->
+        <footer class="footer">
+            <div class="footer__grid">
+                <div class="footer__grid--cell">
+                    <img src="images/logo.jpg" alt="" class="footer__grid--image">
+                    <p class="footer__grid--paragraph">
+                        Strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal
+                    </p>
+                    <div class="footer__grid--socialbox">
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="footer__grid--sociallink">
+                            <svg class="footer__grid--svg">
+                                <use href="svg/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Address Location
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        9/277 Dakshin Puri Extn.<br> Dr. Ambedkar Nagar, <br>New Delhi 110062
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Phone: +91-9810171702
+                    </p>
+                    <p class="footer__grid--paragraph">
+                        Email: founder@ladlifoundation.com
+                    </p>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Quick Links
+                    </h4>
+                    <div class="footer__grid--links">
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Project</a>
+                        <a href="#" class="footer__grid--link">NEWS</a>
+                        <a href="#" class="footer__grid--link">Blog</a>
+                        <a href="#" class="footer__grid--link">Event</a>
+                        <a href="#" class="footer__grid--link">Contact</a>
+                        <a href="#" class="footer__grid--link">About us</a>
+                        <a href="#" class="footer__grid--link">Saheli</a>
+                    </div>
+                </div>
+                <div class="footer__grid--cell">
+                    <h4 class="footer__grid--heading">
+                        Newsletter
+                    </h4>
+                    <p class="footer__grid--paragraph">
+                        You get notified when somthing new will appear.
+                    </p>
+                    <form action="#" class="footer__grid--newsform">
+                        <input type="text" placeholder="Your Email Here" name="footerEmail" id="footerEmail" class="footer__grid--text">
+                        <button class="footer__grid--submit">
+                            <svg class="footer__grid--submitIcon">
+                                <use href="svg/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="footer__copyright--paragraph">
+                    Copyright © 2020 Ladli Foundation, all rights reserved. Designed by: <a href="https://adhyay.co.in">Adhyay</a>
+                </p>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+<script src="js/events.js"></script>
+<script src="js/causes.js"></script>
+</html>

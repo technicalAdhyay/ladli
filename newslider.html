@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="newslider">
+        <div class="newslider__container">
+            <div class="newslider__images">
+                <img src="images/slide-1.jpg" alt="" class="newslider__images--image select">
+                <img src="images/slide-2.jpg" alt="" class="newslider__images--image left">
+                <img src="images/slide-3.jpg" alt="" class="newslider__images--image right">
+            </div>
+            <div class="newslider__content">
+                <div class="newslider__content--contentbox select">
+                    <h1 class="newslider__content--heading">Restoring the dignity of the underpriviledged.</h1>
+                    <p class="newslider__content--paragraph">Magazine and housed in a nice, gilded frame. It showed a lady fitted out with hat and fur boa who sat upright, raising a heavy fur muff that</p>
+                    <a href="#" class="newslider__content--button">Contribute now</a>
+                </div>
+                <div class="newslider__content--contentbox">
+                    <h1 class="newslider__content--heading">Restoring the dignity of the underpriviledged.</h1>
+                    <p class="newslider__content--paragraph">Magazine and housed in a nice, gilded frame. It showed a lady fitted out with hat and fur boa who sat upright, raising a heavy fur muff that</p>
+                    <a href="#" class="newslider__content--button">Contribute now</a>
+                </div>
+                <div class="newslider__content--contentbox">
+                    <h1 class="newslider__content--heading">Restoring the dignity of the underpriviledged.</h1>
+                    <p class="newslider__content--paragraph">Magazine and housed in a nice, gilded frame. It showed a lady fitted out with hat and fur boa who sat upright, raising a heavy fur muff that</p>
+                    <a href="#" class="newslider__content--button">Contribute now</a>
+                </div>
+            </div>
+            <div class="newslider__buttons">
+                <div class="newslider__buttons--button left">
+                    <svg>
+                        <use href="./svg/sprite.svg#icon-chevron-left"></use>
+                    </svg>
+                </div>
+                <div class="newslider__buttons--button right">
+                    <svg>
+                        <use href="./svg/sprite.svg#icon-chevron-right"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+var allsliderbuttons = document.querySelectorAll('.newslider__buttons--button');
+var allsliderimages = document.querySelectorAll('.newslider__images--image');
+var allslidercontent = document.querySelectorAll('.newslider__content--contentbox');
+var slidetimeout = setTimeout(
+    function(){
+        slideleft();
+    },8000
+)
+var currentslide = 0;
+var leftslide = 1;
+var rightslide = 2;
+
+function slideleft(){
+    clearTimeout(slidetimeout);
+    allsliderimages[currentslide].classList.add('left');    
+    allsliderimages[leftslide].classList.add('select');
+    allsliderimages[leftslide].classList.remove('left');
+    Array.from( allslidercontent ).forEach( (content) => {
+        content.classList.remove('select');
+    } )
+    allslidercontent[leftslide].classList.add('select');
+
+    setTimeout(
+        function (){
+            allsliderimages[currentslide].classList.remove('select');
+            allsliderimages[currentslide].classList.remove('left');
+            allsliderimages[currentslide].classList.remove('right');
+
+            allsliderimages[rightslide].classList.remove('right');
+            allsliderimages[rightslide].classList.remove('left');
+            allsliderimages[rightslide].classList.remove('select');
+
+            allsliderimages[leftslide].classList.remove('left');
+            allsliderimages[leftslide].classList.remove('right');
+
+            allsliderimages[rightslide].classList.add('left');
+            allsliderimages[currentslide].classList.add('right');
+            let tc = currentslide;
+            let tl = leftslide;
+            let tr = rightslide;
+            currentslide = tl;
+            leftslide = tr;
+            rightslide = tc;
+
+            slidetimeout = setTimeout(
+                function(){
+                    slideleft();
+                },8000
+            )
+
+        },800
+    );
+}
+
+function slideright(){
+    allsliderimages[currentslide].classList.add('right');
+    allsliderimages[rightslide].classList.add('select');
+    allsliderimages[rightslide].classList.remove('right');
+    Array.from( allslidercontent ).forEach( (content) => {
+        content.classList.remove('select');
+    } )
+    allslidercontent[rightslide].classList.add('select');
+    setTimeout(
+        function (){
+            allsliderimages[currentslide].classList.remove('select');
+            allsliderimages[currentslide].classList.remove('right');
+            allsliderimages[currentslide].classList.remove('left');
+
+            allsliderimages[leftslide].classList.remove('left');
+            allsliderimages[leftslide].classList.remove('right');
+            allsliderimages[leftslide].classList.remove('select');
+
+            allsliderimages[rightslide].classList.remove('right');
+            allsliderimages[rightslide].classList.remove('left');
+
+            allsliderimages[leftslide].classList.add('right');
+            allsliderimages[currentslide].classList.add('left');
+            let tc = currentslide;
+            let tr = rightslide;
+            let tl = leftslide;
+            currentslide = tr;
+            rightslide = tl;
+            leftslide = tc;
+        },800
+    );
+}
+
+Array.from(allsliderbuttons).forEach( (button,index) => {
+    function slide(e){
+        button.removeEventListener('click',slide);
+        if( button.classList.contains('left') ){
+            slideleft();
+        }else{
+            slideright();
+        }
+        setTimeout(function(){
+            button.addEventListener('click',slide);
+        },1000)
+    }
+    button.addEventListener( 'click', slide );
+} );
+</script>
+</body>
+</html>
